@@ -6,6 +6,9 @@ function Hero() {
     <div className="hero-container">
     <video src='/vedios/vedio1.mp4' autoPlay loop muted />
       <h1>CRISTALINOX</h1>
+      <p>
+    
+      </p>
       <div className="hero-btns">
         <Button
           className="btns"
