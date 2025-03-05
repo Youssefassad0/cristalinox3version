@@ -1,49 +1,74 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
+import { Button } from "./Button";
 import "./Navbar.css";
 function Navbar() {
   const [click, setClick] = useState(false);
-
+  const [button, setButton] = useState(true);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-  return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        <Link className="navbar-logo">CristalInox</Link>
-        <div className="menu-icon" onClick={handleClick}>
-          {click ?  <IoClose className="fa-times" /> : <FiMenu className="fa-bars" />}
-        </div>
-        <ul className={click ? "nav-menu active" : "nav-menu"}>
-          <li className="nav-item">
-            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-              Accueil
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
-              A propos
-            </Link>
-          </li>
 
-          <li className="nav-item">
-            <Link
-              to="/catalogue"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
-              Catalogue
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/contact" className="nav-links" onClick={closeMobileMenu}>
-              Contactez nous
-            </Link>
-          </li>
-        </ul>
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
+
+  useEffect(() => {
+    showButton();
+  }, [])
+  return (
+    <nav className='navbar'>
+    <div className='navbar-container'>
+      <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+        CristalInox
+       
+      </Link>
+      <div className='menu-icon' onClick={handleClick}>
+        <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
       </div>
-    </nav>
+      <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+        <li className='nav-item'>
+          <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+            Home
+          </Link>
+        </li>
+        <li className='nav-item'>
+          <Link
+            to='/services'
+            className='nav-links'
+            onClick={closeMobileMenu}
+          >
+            Services
+          </Link>
+        </li>
+        <li className='nav-item'>
+          <Link
+            to='/products'
+            className='nav-links'
+            onClick={closeMobileMenu}
+          >
+            Products
+          </Link>
+        </li>
+
+        <li>
+          <Link
+            to='/sign-up'
+            className='nav-links-mobile'
+            onClick={closeMobileMenu}
+          >
+            Sign Up
+          </Link>
+        </li>
+      </ul>
+      {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+    </div>
+  </nav>
   );
 }
 
