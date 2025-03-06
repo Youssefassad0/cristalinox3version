@@ -5,27 +5,27 @@ import CardItem from "./CardItems";
 function Cards() {
   return (
     <div className="cards">
-      <h1>Check out these EPIC Destinations!</h1>
+      <h1>Découvrez ces destinations INCROYABLES !</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
               src="images/modern-staircase.jfif"
-              text="Custom-designed stainless steel staircases for modern interiors"
-              label="Home Decor"
-              path="/projects"
+              text="Escaliers en acier inoxydable sur mesure pour des intérieurs modernes"
+              label="Décoration intérieure"
+              path="/projets"
             />
             <CardItem
               src="images/industrial-piping.jfif"
-              text="High-quality industrial piping solutions for your business"
+              text="Solutions de tuyauterie industrielle de haute qualité pour votre entreprise"
               label="Tuyauterie"
               path="/services"
             />
             <CardItem
               src="images/metal-gate.jfif"
-              text="Elegant and durable metal gates tailored to your needs"
-              label="Ironwork"
-              path="/products"
+              text="Portails en métal élégants et durables adaptés à vos besoins"
+              label="Métallerie"
+              path="/produits"
             />
           </ul>
         </div>
