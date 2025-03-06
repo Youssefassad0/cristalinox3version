@@ -5,31 +5,43 @@ import "./Hero.css";
 import "../../App.css";
 
 function Hero() {
-  const [videoSource, setVideoSource] = useState("/vedios/vedio2.mp4");
+  const [videoSource, setVideoSource] = useState(
+    window.innerWidth > 900 ? "/vedios/vedio2.mp4" : "/vedios/vedio4.mp4"
+  );
+  const [isLooping, setIsLooping] = useState(window.innerWidth > 900);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 900) {
+        setVideoSource("/vedios/vedio2.mp4");
+        setIsLooping(true); // Active la boucle entre 2 vidéos
+      } else {
+        setVideoSource("/vedios/vedio4.mp4");
+        setIsLooping(false); // Pas de boucle sur mobile
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    // Cette mise à jour forcera le rechargement du composant
+  }, [videoSource]);
 
   const handleVideoEnd = () => {
-    if (videoSource === "/vedios/vedio4.mp4") {
-      setVideoSource("/vedios/vedio2.mp4");
-    } else {
-      setVideoSource("/vedios/vedio4.mp4");
+    if (isLooping) {
+      setVideoSource((prev) =>
+        prev === "/vedios/vedio2.mp4" ? "/vedios/vedio1.mp4" : "/vedios/vedio2.mp4"
+      );
     }
   };
 
-  useEffect(() => {
-    const videoElement = document.querySelector('video');
-    if (videoElement) {
-      videoElement.load(); 
-    }
-  }, [videoSource]);
-
   return (
     <div className="hero-container">
-      <video
-        src={videoSource}
-        autoPlay
-        muted
-        onEnded={handleVideoEnd} 
-      />
+      <video key={videoSource} src={videoSource} autoPlay muted onEnded={handleVideoEnd} />
       <motion.h1
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

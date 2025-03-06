@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
-import { Button } from "./Button";
 import "./Navbar.css";
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -58,14 +57,13 @@ function Navbar() {
           <li>
             <Link
               to="/contact"
-              className="nav-links-mobile"
+              className="nav-links btn--outline"
               onClick={closeMobileMenu}
             >
               Contact
             </Link>
           </li>
         </ul>
-        {button && <Button buttonStyle="btn--outline">demander devis</Button>}
       </div>
     </nav>
   );
