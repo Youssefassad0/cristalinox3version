@@ -6,7 +6,7 @@ function About() {
   return (
     <div className="about-container">
       <section className="section">
-        <motion.div 
+        <motion.div
           className="about-header"
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -17,7 +17,7 @@ function About() {
       </section>
 
       <section className="section">
-        <motion.p 
+        <motion.p
           className="about-text"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -30,7 +30,7 @@ function About() {
       </section>
       
       <section className="section">
-        <motion.div 
+        <motion.div
           className="about-section"
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -45,7 +45,7 @@ function About() {
       </section>
       
       <section className="section">
-        <motion.div 
+        <motion.div
           className="about-section"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -62,7 +62,7 @@ function About() {
       </section>
       
       <section className="section">
-        <motion.div 
+        <motion.div
           className="about-section"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
