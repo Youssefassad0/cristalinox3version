@@ -3,9 +3,29 @@
   background: #fff;
 }
 
-h1 {
+
+.title-h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
   text-align: center;
+  color: #3A6B6B; /* Steel Blue */
+  position: relative;
+  padding-bottom: 10px;
 }
+
+.title-h1::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(to right, #A7A8AA, #D1D3D4); /* Stainless Steel Gradient */
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
 
 .flip-card {
   background-color: transparent;
@@ -51,15 +71,30 @@ h1 {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border: 1px solid coral;
+  border: 1px solid #333333;
   border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
 }
 
 .flip-card-front {
   background: linear-gradient(
     120deg,
-    bisque 60%,
-    rgb(255, 231, 222) 88%,
+    #A7A8AA 60%,  /* Stainless Steel Gray */
+    #D1D3D4 88%,  /* Lighter Silver */
+    #B0B0B0 40%,  /* Medium Gray */
+    rgba(58, 107, 107, 0.7) 48%  /* Steel Blue with Transparency */
+  );
+  color: #3A6B6B; /* Steel Blue */
+}
+
+
+.flip-card-front .bronz{
+  background: linear-gradient(
+    120deg,
+    #1A1A1A 60%,
+    #3B5B7B 88%,
     rgb(255, 211, 195) 40%,
     rgba(255, 127, 80, 0.603) 48%
   );
@@ -69,15 +104,16 @@ h1 {
 .flip-card-back {
   background: linear-gradient(
     120deg,
-    rgb(255, 174, 145) 30%,
-    coral 88%,
-    bisque 40%,
-    rgb(255, 185, 160) 78%
+    #6C6D6F 30%,  /* Dark Stainless Steel */
+    #A7A8AA 88%,  /* Stainless Steel Gray */
+    #D1D3D4 40%,  /* Lighter Silver */
+    #3A6B6B 78%   /* Steel Blue */
   );
   color: white;
   transform: rotateY(180deg);
   font-size: 1.5em;
 }
+
 
 @media only screen and (min-width: 1200px) {
   .content__blog__container {
@@ -89,7 +125,6 @@ h1 {
   .flip-card {
     display: flex;
     padding-top: 20px;
-    margin-bottom: 20px;
   }
 }
 
