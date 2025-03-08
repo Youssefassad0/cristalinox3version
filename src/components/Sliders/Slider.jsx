@@ -26,7 +26,7 @@ function Slider() {
         <div className="content">
           <h1 data-content="Cristal Inox">Cristal Inox</h1>
           <div className="author">
-            <h2>LUN DEV</h2>
+        
             <p>
     High-quality **inox solutions** for <b>decoration, medical, and piping</b> industries.
   </p>
