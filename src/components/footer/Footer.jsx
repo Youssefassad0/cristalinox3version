@@ -80,11 +80,8 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="https://wa.me/212661471841"
-                  target="_blank"
-
-                 >
-                <i className="fa-brands fa-whatsapp"></i>
+                <Link to="https://wa.me/212661471841" target="_blank">
+                  <i className="fa-brands fa-whatsapp"></i>
                 </Link>
               </li>
             </ul>

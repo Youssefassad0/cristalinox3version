@@ -14,10 +14,10 @@ function Hero() {
     const handleResize = () => {
       if (window.innerWidth > 900) {
         setVideoSource("/vedios/vedio2.mp4");
-        setIsLooping(true); // Active la boucle entre 2 vidéos
+        setIsLooping(true); 
       } else {
         setVideoSource("/vedios/vedio4.mp4");
-        setIsLooping(false); // Pas de boucle sur mobile
+        setIsLooping(false); 
       }
     };
 
@@ -28,7 +28,6 @@ function Hero() {
   }, []);
 
   useEffect(() => {
-    // Cette mise à jour forcera le rechargement du composant
   }, [videoSource]);
 
   const handleVideoEnd = () => {
