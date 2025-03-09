@@ -31,6 +31,10 @@ function Footer() {
               <li>
                 <Link to="/contact">Contact</Link>
               </li>
+
+              <li>
+                <Link to="/FAQ">FAQ's</Link>
+              </li>
             </ul>
           </div>
 

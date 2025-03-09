@@ -6,6 +6,7 @@ import Home from "./components/Pages/Home";
 import About from "./components/about/About";
 import Footer from "./components/footer/Footer";
 import Contact from "./components/Contact/Contact";
+import FAQ from "./components/Contact/Faqs";
 
 function AnimatedRoutes() {
   const location = useLocation(); // Détecte la route actuelle
@@ -16,6 +17,7 @@ function AnimatedRoutes() {
         <Route path="/" element={<PageTransition><Home /></PageTransition>} />
         <Route path="/about" element={<PageTransition><About /></PageTransition>} />
         <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
+        <Route path="/FAQ" element={<PageTransition><FAQ /></PageTransition>} />
       </Routes>
     </AnimatePresence>
   );
