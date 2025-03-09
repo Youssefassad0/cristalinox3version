@@ -1,11 +1,9 @@
 import React from "react";
-import { Parallax } from "react-parallax";
 import Card_Valeur from "./Card_Valeur";
 import "./Valeurs.css"; // Ajoute du style pour améliorer l'effet
 
 function Valeurs() {
   return (
-    <Parallax bgImage="/images/parallax-bg.jpg" strength={300}>
       <div className="cards">
         <h1 className="title-h1">Pourquoi Cristal Inox</h1>
         <div className="cards__container">
@@ -37,7 +35,6 @@ function Valeurs() {
           </div>
         </div>
       </div>
-    </Parallax>
   );
 }
 

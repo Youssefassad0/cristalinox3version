@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import { Parallax } from "react-parallax";
-import "./About2.css";
 
 function AboutTest() {
         useEffect(() => {
