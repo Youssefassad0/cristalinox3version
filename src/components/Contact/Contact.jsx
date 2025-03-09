@@ -6,6 +6,7 @@ import phone from "../../assets/phone.json";
 import maps from "../../assets/maps.json";
 import Lottie from "lottie-react";
 import FAQ from "./Faqs";
+import QrLinks from "./CodeQR";
 
 function Contact() {
   useEffect(() => {
@@ -106,6 +107,7 @@ function Contact() {
         </section>
       </motion.div>
       <FAQ />
+      <QrLinks />
     </>
   );
 }
