@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Contact.css";
 function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="contact_body">
       <section className="contact_section">
@@ -44,7 +47,7 @@ function Contact() {
               <i className="fa-solid fa-location-dot contactIcon"></i>
               <article className="text">
                 <h1 className="sub-heading">Location</h1>
-                <p className="para">2276 Lynn Ogden Lane Beaumont</p>
+                <p className="para">Casablanca , Tit Mellil</p>
               </article>
             </div>
 
@@ -52,7 +55,7 @@ function Contact() {
               <i className="fa-solid fa-envelope contactIcon"></i>
               <article className="text">
                 <h1 className="sub-heading">Email</h1>
-                <p className="para">Email: programminginsider2021@gmail.com</p>
+                <p className="para">Email: CristalInox@gmail.com</p>
               </article>
             </div>
 
@@ -60,7 +63,7 @@ function Contact() {
               <i className="fa-solid fa-phone contactIcon"></i>
               <article className="text">
                 <h1 className="sub-heading">Phone</h1>
-                <p className="para">2276 Lynn Ogden Lane Beaumont</p>
+                <p className="para">+2120661471841</p>
               </article>
             </div>
           </div>

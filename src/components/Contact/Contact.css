@@ -12,12 +12,20 @@
 
 }
 
-
+@keyframes glowBg {
+    from {
+        background-color: #303841;
+    }
+    to {
+        background-color: #2b343c;
+    }
+}
 .contact_body{
     font-family: 'Roboto Serif', serif;
     color: var(--textColor);
     background: var(--bodyBg);
     padding-bottom: 5em;
+    animation: glowBg 3s infinite alternate;
 }
 .contact_section{
     display: flex;
@@ -46,8 +54,15 @@
     font-size: 2.5em;
 }
 
-.sub-heading{
+.sub-heading {
     text-align: left;
+    transition: 0.3s ease-in-out;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.sub-heading:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    transform: scale(1.05);
 }
 
 .contactForm{
@@ -144,11 +159,21 @@ form{
     align-items: center;
 }
 
-.contactIcon{
+.contactIcon {
     font-size: 2rem;
     color: var(--primaryColor);
     width: 70px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-shadow: 0 0 10px rgba(0, 118, 163, 0.8);
 }
+
+.contactIcon:hover {
+    text-shadow: 0 0 20px rgba(0, 118, 163, 1), 
+                 0 0 30px rgba(0, 118, 163, 0.9);
+    transform: scale(1.1);
+}
+
 
 @media screen and (min-width:800px) {
     .contact_section{
