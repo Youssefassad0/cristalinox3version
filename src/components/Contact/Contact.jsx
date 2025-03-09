@@ -1,9 +1,19 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "./Contact.css";
+import gmail from "../../assets/gmail.json";
+import phone from "../../assets/phone.json";
+import maps from "../../assets/maps.json";
+import Lottie from "lottie-react";
 function Contact() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const copyEmail = () => {
+    const email = "CristalInox@gmail.com";
+    navigator.clipboard.writeText(email);
+    alert("Email copied to clipboard!");
+  };
+  const lottieRef = useRef();
   return (
     <div className="contact_body">
       <section className="contact_section">
@@ -44,7 +54,17 @@ function Contact() {
 
           <div className="contactMethod">
             <div className="method">
-              <i className="fa-solid fa-location-dot contactIcon"></i>
+            <div className="lottie-container">
+                <Lottie
+                  lottieRef={lottieRef}
+                  animationData={maps}
+                  height={60}
+                  width={80}
+                  onDOMLoaded={() => {
+                    lottieRef.current.setSpeed(1);
+                  }}
+                />
+              </div>
               <article className="text">
                 <h1 className="sub-heading">Location</h1>
                 <p className="para">Casablanca , Tit Mellil</p>
@@ -52,18 +72,42 @@ function Contact() {
             </div>
 
             <div className="method">
-              <i className="fa-solid fa-envelope contactIcon"></i>
+              <div className="lottie-container">
+                <Lottie
+                  lottieRef={lottieRef}
+                  animationData={gmail}
+                  height={50}
+                  width={50}
+                  onDOMLoaded={() => {
+                    lottieRef.current.setSpeed(1);
+                  }}
+                />
+              </div>
               <article className="text">
-                <h1 className="sub-heading">Email</h1>
+                <h1 className="sub-heading" onClick={copyEmail}>
+                  Email
+                </h1>
                 <p className="para">Email: CristalInox@gmail.com</p>
               </article>
             </div>
 
             <div className="method">
-              <i className="fa-solid fa-phone contactIcon"></i>
+              <div className="lottie-container">
+                <Lottie
+                  lottieRef={lottieRef}
+                  animationData={phone}
+                  height={50}
+                  width={50}
+                  onDOMLoaded={() => {
+                    lottieRef.current.setSpeed(1);
+                  }}
+                />
+              </div>
               <article className="text">
                 <h1 className="sub-heading">Phone</h1>
-                <p className="para">+2120661471841</p>
+                <a href="tel:+2120661471841" className="para" id="clickable">
+                  +2120661471841
+                </a>
               </article>
             </div>
           </div>

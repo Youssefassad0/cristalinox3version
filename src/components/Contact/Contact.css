@@ -157,6 +157,8 @@ form{
 .method{
     display: flex;
     align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
 }
 
 .contactIcon {
@@ -167,24 +169,41 @@ form{
     transition: 0.3s ease-in-out;
     text-shadow: 0 0 10px rgba(0, 118, 163, 0.8);
 }
-
+#clickable{
+    color: var(--primaryColor);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
 .contactIcon:hover {
     text-shadow: 0 0 20px rgba(0, 118, 163, 1), 
                  0 0 30px rgba(0, 118, 163, 0.9);
     transform: scale(1.1);
 }
 
+.lottie-container {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 @media screen and (min-width:800px) {
-    .contact_section{
+    .contact_section {
         max-width: 1100px;
     }
-    .contactForm{
+    .contactForm {
         grid-template-columns: 1fr 1fr;
-    }   
-
-    .contactMethod{
+    }
+    .contactMethod {
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+    }
+    .method {
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 }
