@@ -68,7 +68,7 @@
   top: 0;
 }
 .about-section.two ul li:before {
-  content: "✅";
+  content: "✔️";
   position: absolute;
   left: 0;
   font-size: 1.2rem;
