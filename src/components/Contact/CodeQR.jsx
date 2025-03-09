@@ -1,5 +1,5 @@
 import React from "react";
-import QRCode from "qrcode.react";
+import { QRCodeCanvas } from "qrcode.react";
 import "./QrLinks.css";
 
 const QrLinks = () => {
@@ -33,7 +33,7 @@ const QrLinks = () => {
             style={{ borderColor: link.color }}
           >
             <h2 style={{ color: link.color }}>{link.name}</h2>
-            <QRCode value={link.url} size={150} />
+            <QRCodeCanvas value={link.url} size={150} />
             <a
               href={link.url}
               target="_blank"

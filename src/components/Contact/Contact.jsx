@@ -106,8 +106,8 @@ function Contact() {
           </div>
         </section>
       </motion.div>
-      <FAQ />
       <QrLinks />
+      <FAQ />
     </>
   );
 }
