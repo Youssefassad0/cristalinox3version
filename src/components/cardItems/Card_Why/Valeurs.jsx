@@ -1,6 +1,6 @@
 import React from "react";
 import Card_Valeur from "./Card_Valeur";
-import "./Valeurs.css"; // Ajoute du style pour améliorer l'effet
+import "./Valeurs.css"; 
 
 function Valeurs() {
   return (
