@@ -61,13 +61,13 @@ function About() {
         >
           <h3>Pourquoi Choisir CristalInox ?</h3>
           <ul>
-            <li>✅ Savoir-faire artisanal et expertise technique</li>
-            <li>✅ Matériaux haut de gamme et finitions impeccables</li>
+            <li>Savoir-faire artisanal et expertise technique</li>
+            <li> Matériaux haut de gamme et finitions impeccables</li>
             <li>
-              ✅ Accompagnement personnalisé de la conception à l'installation
+              Accompagnement personnalisé de la conception à l'installation
             </li>
             <li>
-              ✅ Innovation et respect des normes de qualité les plus strictes
+              Innovation et respect des normes de qualité les plus strictes
             </li>
           </ul>
         </motion.div>
@@ -75,7 +75,7 @@ function About() {
 
       <section className="section">
         <motion.div
-          className="about-section"
+          className="about-section two"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.2 }}
@@ -83,16 +83,16 @@ function About() {
           <h3>Nos Services</h3>
           <ul>
             <li>
-              🔹 Décoration intérieure et extérieure : Escaliers, garde-corps,
+              Décoration intérieure et extérieure : Escaliers, garde-corps,
               mobilier design en inox.
             </li>
             <li>
-              🔹 Tuyauterie industrielle : Solutions robustes et performantes
+              Tuyauterie industrielle : Solutions robustes et performantes
               adaptées aux environnements exigeants.
             </li>
             <li>
-              🔹 Médical et alimentaire : Conception d'équipements respectant
-              les normes d'hygiène les plus strictes.
+              Médical et alimentaire : Conception d'équipements respectant les
+              normes d'hygiène les plus strictes.
             </li>
           </ul>
         </motion.div>
