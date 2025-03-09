@@ -16,7 +16,7 @@ function About() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <h2>À Propos de CristalInox</h2>
+          <h2>À Propos de Nous</h2>
         </motion.div>
       </section>
 
