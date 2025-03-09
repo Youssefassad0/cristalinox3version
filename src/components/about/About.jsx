@@ -1,12 +1,11 @@
-import React , {useEffect} from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import "./Abouts.css";
 
 function About() {
-
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, [])
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="about-container">
       <section className="section">
@@ -42,6 +41,7 @@ function About() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
         >
+          {" "}
           <h3>Notre Engagement</h3>
           <p>
             Nous croyons que l'acier inoxydable est bien plus qu'un simple
@@ -54,7 +54,7 @@ function About() {
 
       <section className="section">
         <motion.div
-          className="about-section"
+          className="about-section one"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.9 }}

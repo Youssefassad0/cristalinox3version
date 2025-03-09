@@ -45,6 +45,8 @@
     transform: perspective(1000px);
     animation: autoRun 20s linear infinite;
     z-index: 2;
+    margin-bottom: 30px;
+
 }
 @keyframes autoRun{
     from{
@@ -60,6 +62,8 @@
     transform: 
         rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
         translateZ(550px);
+    margin-bottom: 30px;
+
 }
 .banner .slider .item_slider img{
     width: 100%;

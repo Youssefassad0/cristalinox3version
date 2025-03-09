@@ -72,8 +72,8 @@
   .about-container {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
       url("/public/images/about_bg.png");
-    background-size: top; /* Utilisation de cover pour mieux gérer l'échelle de l'image */
-    background-attachment: fixed; /* On enlève le fixed ici pour éviter l'animation du fond sur les petits écrans */
+    background-size: top; 
+    background-attachment: fixed; 
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -100,8 +100,8 @@
   .about-container {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
       url("/public/images/about_bg.png");
-    background-size: top; /* Toujours utiliser cover pour que l'image soit bien redimensionnée */
-    background-attachment: fixed; /* Plus besoin de fixed */
+    background-size: top; 
+    background-attachment: fixed; 
     background-position: center;
     background-repeat: no-repeat;
   }
