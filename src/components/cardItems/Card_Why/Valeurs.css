@@ -3,13 +3,12 @@
   background: #fff;
 }
 
-
 .title-h1 {
   font-size: 1.8rem;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  color: #3A6B6B; /* Steel Blue */
+  color: #3a6b6b; /* Steel Blue */
   position: relative;
   padding-bottom: 10px;
 }
@@ -18,7 +17,7 @@
   content: "";
   width: 100px;
   height: 4px;
-  background: linear-gradient(to right, #A7A8AA, #D1D3D4); 
+  background: linear-gradient(to right, #a7a8aa, #d1d3d4);
   position: absolute;
   bottom: -5px;
   left: 50%;
@@ -27,11 +26,11 @@
 }
 
 @keyframes appear {
-  from{
+  from {
     opacity: 0;
     scale: 0.5;
   }
-  to{
+  to {
     opacity: 1;
     scale: 1;
   }
@@ -94,23 +93,22 @@
 .flip-card-front {
   background: linear-gradient(
     120deg,
-    #A7A8AA 60%,  /* Stainless Steel Gray */
-    #D1D3D4 88%,  /* Lighter Silver */
-    #B0B0B0 40%,  /* Medium Gray */
-    rgba(58, 107, 107, 0.7) 48%  /* Steel Blue with Transparency */
+    #a7a8aa 60%,
+    /* Stainless Steel Gray */ #d1d3d4 88%,
+    /* Lighter Silver */ #b0b0b0 40%,
+    /* Medium Gray */ rgba(58, 107, 107, 0.7) 48%
+      /* Steel Blue with Transparency */
   );
-  color: #3A6B6B; /* Steel Blue */
+  color: #3a6b6b; /* Steel Blue */
 }
-
-
 
 .flip-card-back {
   background: linear-gradient(
     120deg,
-    #6C6D6F 30%,  /* Dark Stainless Steel */
-    #A7A8AA 88%,  /* Stainless Steel Gray */
-    #D1D3D4 40%,  /* Lighter Silver */
-    #3A6B6B 78%   /* Steel Blue */
+    #6c6d6f 30%,
+    /* Dark Stainless Steel */ #a7a8aa 88%,
+    /* Stainless Steel Gray */ #d1d3d4 40%,
+    /* Lighter Silver */ #3a6b6b 78% /* Steel Blue */
   );
   color: white;
   transform: rotateY(180deg);
@@ -126,13 +124,10 @@
   background-position: center;
 }
 
-
-
 @media only screen and (min-width: 1200px) {
   .content__blog__container {
     width: 84%;
   }
-
 }
 
 @media only screen and (min-width: 1024px) {
@@ -146,7 +141,7 @@
   .cards__item {
     margin-bottom: 2rem;
   }
-  .flip-card{
+  .flip-card {
     width: 290px;
   }
 }
