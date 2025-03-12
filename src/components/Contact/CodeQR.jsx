@@ -23,29 +23,9 @@ const QrLinks = () => {
   ];
 
   return (
-    <div className="qr-container">
-      <h1>Retrouvez-nous sur les réseaux sociaux</h1>
-      <div className="qr-grid">
-        {links.map((link, index) => (
-          <div
-            className="qr-box"
-            key={index}
-            style={{ borderColor: link.color }}
-          >
-            <h2 style={{ color: link.color }}>{link.name}</h2>
-            <QRCodeCanvas value={link.url} size={150} />
-            <a
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="qr-link"
-            >
-              Voir le profil
-            </a>
-          </div>
-        ))}
-      </div>
-    </div>
+   <>
+   Hello
+   </>
   );
 };
 
