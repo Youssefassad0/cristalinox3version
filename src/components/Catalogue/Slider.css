@@ -7,16 +7,17 @@
   
   .slide-item {
     padding: 15px 20px;
-    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    background: linear-gradient(135deg, #333333, #b6ad7d,#9a8780);
     border-radius: 10px;
     text-align: center;
     font-size: 18px;
     font-weight: bold;
-    color: white;
+    color: #fff;
     margin: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    text-decoration: none;
   }
   
   .slide-item:hover {

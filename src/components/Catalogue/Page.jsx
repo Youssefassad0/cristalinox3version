@@ -6,6 +6,7 @@ function Categorie() {
     <div>
       <h1>Hello Everyone</h1>
       <CategorySlider />
+      
     </div>
   );
 }

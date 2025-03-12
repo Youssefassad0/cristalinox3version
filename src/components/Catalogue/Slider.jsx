@@ -4,6 +4,7 @@ import categories from "../../Categorie";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Slider.css";
+import { Link } from "react-router-dom";
 
 function CategorySlider() {
   const settings = {
@@ -40,9 +41,9 @@ function CategorySlider() {
     <div className="slider-container">
       <Slider {...settings}>
         {categories.map((category, index) => (
-          <div key={index} className="slide-item">
-            {category}
-          </div>
+          <Link to={category.link} key={index} className="slide-item">
+            <div >{category.nom}</div>
+          </Link>
         ))}
       </Slider>
     </div>
