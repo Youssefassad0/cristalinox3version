@@ -4,9 +4,9 @@ import CategorySlider from "./Slider";
 function Categorie() {
   return (
     <div>
-      <h1>Hello Everyone</h1>
+      <h1>Découvrir notre nouveaux Produits</h1>
       <CategorySlider />
-      
+
     </div>
   );
 }
