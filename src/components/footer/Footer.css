@@ -134,6 +134,11 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .footer-container{
+        height: 100vh;
+
+        width: 100%;
+    }
     .footer-content {
         flex-direction: column;
         align-items: center;

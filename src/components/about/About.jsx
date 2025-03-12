@@ -26,7 +26,7 @@ function About() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          Chez <strong>CristalInox</strong>, nous sommes passionnés par
+          Chez <strong>Cristal Inox</strong>, nous sommes passionnés par
           l’excellence de la chaudronnerie en acier inoxydable. Fondée sur un
           savoir-faire artisanal et une volonté d'innovation, notre entreprise
           s'engage à fournir des solutions sur mesure pour les secteurs de la

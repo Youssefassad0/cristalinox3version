@@ -132,6 +132,7 @@
   .content__blog__container {
     width: 84%;
   }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -144,5 +145,8 @@
 @media only screen and (max-width: 1024px) {
   .cards__item {
     margin-bottom: 2rem;
+  }
+  .flip-card{
+    width: 290px;
   }
 }
