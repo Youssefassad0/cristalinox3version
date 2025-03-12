@@ -8,3 +8,5 @@ const categories=[
     "Transport et véhicules ",
     "Instruments et équipements spécialisés ",
 ]
+
+export default categories ;
