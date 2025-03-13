@@ -254,8 +254,54 @@ const products = [
     souscategories: [
       {
         nom: "Sanitaires ",
+        image: "/products/industrie/sanitaire.jpeg",
         description:
           "Lavabos, douches, et autres équipements sanitaires en inox pour leur résistance et leur facilité d’entretien.",
+        produits: [
+          {
+            id: "7",
+            titre: "Porte moderne en inox",
+            description:
+              "Une porte élégante et résistante pour une sécurité accrue.",
+            images: "image7.jpg",
+          },
+        ],
+      },
+      {
+        nom: "Tuyauteries ",
+        image: "/products/industrie/tuyautrie.jpeg",
+        description:
+          "Conduites, tuyaux et raccords en inox pour le transport de fluides dans les systèmes industriels.",
+        produits: [
+          {
+            id: "7",
+            titre: "Porte moderne en inox",
+            description:
+              "Une porte élégante et résistante pour une sécurité accrue.",
+            images: "image7.jpg",
+          },
+        ],
+      },
+      {
+        nom: "Réservoirs",
+        image: "/products/industrie/reservoir.jpeg",
+        description:
+          "Réservoirs de stockage ou cuves en inox utilisés dans l'industrie alimentaire, chimique, ou pharmaceutique",
+        produits: [
+          {
+            id: "7",
+            titre: "Porte moderne en inox",
+            description:
+              "Une porte élégante et résistante pour une sécurité accrue.",
+            images: "image7.jpg",
+          },
+        ],
+      },
+      {
+        nom: "Machines industrielles ",
+        image: "/products/industrie/machine.jpg",
+        description:
+          "Composants de machines, comme des supports ou des éléments en inox pour leur robustesse et leur résistance à la chaleur",
         produits: [
           {
             id: "7",
