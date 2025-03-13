@@ -41,7 +41,7 @@ const ProductListWithFilters = () => {
               <div key={product.id} className="product-card">
                 <img src={product.images} alt={product.titre} />
                 <h3>{product.titre}</h3>
-                <p>{product.description}</p>
+                {/* <p>{product.description}</p> */}
               </div>
             ))
           ) : (
