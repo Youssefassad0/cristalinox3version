@@ -76,60 +76,60 @@ const products = [
         nom: "Tables",
         description:
           "Tables à manger, de bureau, ou de café avec des pieds en inox.",
-          image: "/products/tables/tablev6.jpeg",
+        image: "/products/tables/tablev6.jpeg",
 
         produits: [
           {
-            id:"10",
+            id: "10",
             titre: "Table 1 en inox avec plateau en verre",
             description:
               "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
             images: "/products/tables/tablev1.jpeg",
           },
           {
-            id:"11",
+            id: "11",
             titre: "Table 2 en inox avec plateau en verre",
             description:
               "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
             images: "/products/tables/tablev2.jpeg",
           },
           {
-            id:"12",
+            id: "12",
             titre: "Table 3 en inox avec plateau en verre",
             description:
               "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
             images: "/products/tables/tablev3.jpeg",
           },
           {
-            id:"13",
+            id: "13",
             titre: "Table 4 en inox avec plateau en verre",
             description:
               "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
             images: "/products/tables/tablev4.jpeg",
           },
           {
-            id:"14",
+            id: "14",
             titre: "Table 5 en inox avec plateau en verre",
             description:
               "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
             images: "/products/tables/tablev5.jpeg",
           },
           {
-            id:"15",
+            id: "15",
             titre: "Table 6 en inox avec plateau en verre",
             description:
               "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
             images: "/products/tables/tablev6.jpeg",
           },
           {
-            id:"16",
+            id: "16",
             titre: "Table 7 en inox avec plateau en verre",
             description:
               "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
             images: "/products/tables/tablev7.jpeg",
           },
           {
-            id:"17",
+            id: "17",
             titre: "Table à manger ",
             description:
               "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
@@ -137,27 +137,73 @@ const products = [
           },
         ],
       },
+    
+      {
+        nom: "Bureaux ",
+        description:
+          "Sur mesure, avec des structures en inox pour une allure contemporaine.",
+        image: "/products/bureaux/bureaux.jpg",
+        produits: [
+          {
+            id: "5",
+            titre: "Porte moderne en inox",
+            description:
+              "Une porte élégante et résistante pour une sécurité accrue.",
+            images: "image7.jpg",
+          },
         ],
       },
       {
-        nom: "Menuiserie",
-        code: "Menuiserie",
-        "souscategories": [
+        nom: "Bibliothèques et étagères",
+        description: "Avec des étagères en inox pour un aspect industriel.",
+        image: "/products/biblio/bibliotheque.jpg",
+        produits: [
           {
-            nom: "Portes",
+            id: "5",
+            titre: "Porte moderne en inox",
             description:
-              "Portes extérieures ou intérieures en inox, utilisées pour leur robustesse et leur résistance.",
-            produits: [
-              {
-                id:"5",
-                titre: "Porte moderne en inox",
-                description:
-                  "Une porte élégante et résistante pour une sécurité accrue.",
-                images: "image7.jpg",
-              },
-            ],
+              "Une porte élégante et résistante pour une sécurité accrue.",
+            images: "image7.jpg",
           },
-        // ],
+        ],
+      },
+      {
+        nom: "Éléments de décoration ",
+        description:
+          "Sculptures, miroirs avec cadres en inox, lampes, etc.",
+        image: "/products/decoration/decoration.jpeg",
+        produits: [
+          {
+            id: "5",
+            titre: "Porte moderne en inox",
+            description:
+              "Une porte élégante et résistante pour une sécurité accrue.",
+            images: "image7.jpg",
+          },
+        ],
+      }
+
+    ],
+  },
+  {
+    nom: "Menuiserie",
+    code: "Menuiserie",
+    souscategories: [
+      {
+        nom: "Portes",
+        description:
+          "Portes extérieures ou intérieures en inox, utilisées pour leur robustesse et leur résistance.",
+        produits: [
+          {
+            id: "5",
+            titre: "Porte moderne en inox",
+            description:
+              "Une porte élégante et résistante pour une sécurité accrue.",
+            images: "image7.jpg",
+          },
+        ],
+      },
+      // ],
       // },
       // {
       //   nom: "Équipements extérieurs et d'aménagement urbain",
