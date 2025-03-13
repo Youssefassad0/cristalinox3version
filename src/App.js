@@ -20,6 +20,7 @@ function AnimatedRoutes() {
         <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
         <Route path="/FAQ" element={<PageTransition><FAQ /></PageTransition>} />
         <Route path="/catalogue" element={<PageTransition><Categorie /></PageTransition>} />
+        <Route path="/catalogue/:code" element={<PageTransition><Categorie /></PageTransition>} />
       </Routes>
     </AnimatePresence>
   );

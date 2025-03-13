@@ -41,7 +41,7 @@ function CategorySlider() {
     <div className="slider-container">
       <Slider {...settings}>
         {categories.map((category, index) => (
-          <Link to={category.link} key={index} className="slide-item">
+          <Link to={'/catalogue/'+category.code} key={index} className="slide-item">
             <div>{category.nom}</div>
           </Link>
         ))}
