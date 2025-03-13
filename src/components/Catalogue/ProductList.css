@@ -72,7 +72,51 @@
     font-size: 16px;
   }
   
-
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .page-btn {
+    background: #ff85a2;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .page-btn:hover {
+    background: #ff4f7b;
+  }
+  
+  .page-btn:disabled {
+    background: #ddd;
+    cursor: not-allowed;
+  }
+  
+  .active {
+    background: #ff4f7b;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 480px) {
+    .pagination {
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+  
+    .page-btn {
+      padding: 6px 10px;
+      font-size: 14px;
+    }
+  }
+  
 /* Responsive */
 @media (max-width: 1024px) {
   .product-list {

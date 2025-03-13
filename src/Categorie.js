@@ -71,20 +71,69 @@ const products = [
           },
         ],
       },
+      {
+        nom: "Tables",
+        description:
+          "Tables à manger, de bureau, ou de café avec des pieds en inox.",
+        produits: [
           {
-            nom: "Tables",
+            id:"10",
+            titre: "Table 1 en inox avec plateau en verre",
             description:
-              "Tables à manger, de bureau, ou de café avec des pieds en inox.",
-            produits: [
-              {
-                id:"10",
-                titre: "Table en inox avec plateau en verre",
-                description:
-                  "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
-                images: "/products/tables/tablev1.jpeg",
-              },
-            ],
+              "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
+            images: "/products/tables/tablev1.jpeg",
           },
+          {
+            id:"11",
+            titre: "Table 2 en inox avec plateau en verre",
+            description:
+              "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
+            images: "/products/tables/tablev2.jpeg",
+          },
+          {
+            id:"12",
+            titre: "Table 3 en inox avec plateau en verre",
+            description:
+              "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
+            images: "/products/tables/tablev3.jpeg",
+          },
+          {
+            id:"13",
+            titre: "Table 4 en inox avec plateau en verre",
+            description:
+              "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
+            images: "/products/tables/tablev4.jpeg",
+          },
+          {
+            id:"14",
+            titre: "Table 5 en inox avec plateau en verre",
+            description:
+              "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
+            images: "/products/tables/tablev5.jpeg",
+          },
+          {
+            id:"15",
+            titre: "Table 6 en inox avec plateau en verre",
+            description:
+              "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
+            images: "/products/tables/tablev6.jpeg",
+          },
+          {
+            id:"16",
+            titre: "Table 7 en inox avec plateau en verre",
+            description:
+              "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
+            images: "/products/tables/tablev7.jpeg",
+          },
+          {
+            id:"17",
+            titre: "Table 8 en inox avec plateau en verre",
+            description:
+              "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
+            images: "/products/tables/tablev8.jpeg",
+          },
+        ],
+      },
       //   ],
       // },
       // {
