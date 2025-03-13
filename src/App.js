@@ -8,6 +8,7 @@ import Footer from "./components/footer/Footer";
 import Contact from "./components/Contact/Contact";
 import FAQ from "./components/Contact/Faqs";
 import Categorie from "./components/Catalogue/Page";
+import ProductListWithCategories from "./components/Catalogue/Page";
 
 function AnimatedRoutes() {
   const location = useLocation(); // Détecte la route actuelle
@@ -19,8 +20,7 @@ function AnimatedRoutes() {
         <Route path="/about" element={<PageTransition><About /></PageTransition>} />
         <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
         <Route path="/FAQ" element={<PageTransition><FAQ /></PageTransition>} />
-        <Route path="/catalogue" element={<PageTransition><Categorie /></PageTransition>} />
-        <Route path="/catalogue/:code" element={<PageTransition><Categorie /></PageTransition>} />
+        <Route path="/catalogue" element={<PageTransition><ProductListWithCategories /></PageTransition>} />
       </Routes>
     </AnimatePresence>
   );

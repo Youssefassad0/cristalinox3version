@@ -6,6 +6,7 @@ const products = [
       {
         nom: "Chaises",
         description: "En inox pour un design moderne et épuré.",
+        image: "/products/chaises/chaise1.jpeg",
         produits: [
           {
             id: "1",
@@ -75,6 +76,8 @@ const products = [
         nom: "Tables",
         description:
           "Tables à manger, de bureau, ou de café avec des pieds en inox.",
+          image: "/products/tables/tablev6.jpeg",
+
         produits: [
           {
             id:"10",
@@ -127,34 +130,34 @@ const products = [
           },
           {
             id:"17",
-            titre: "Table 8 en inox avec plateau en verre",
+            titre: "Table à manger ",
             description:
               "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
             images: "/products/tables/tablev8.jpeg",
           },
         ],
       },
-      //   ],
-      // },
-      // {
-      //   nom: "Menuiserie",
-      //   code: "Menuiserie",
-      //   "souscategories": [
-      //     {
-      //       nom: "Portes",
-      //       description:
-      //         "Portes extérieures ou intérieures en inox, utilisées pour leur robustesse et leur résistance.",
-      //       produits: [
-      //         {
-      //           id:"5",
-      //           titre: "Porte moderne en inox",
-      //           description:
-      //             "Une porte élégante et résistante pour une sécurité accrue.",
-      //           images: "image7.jpg",
-      //         },
-      //       ],
-      //     },
-      //   ],
+        ],
+      },
+      {
+        nom: "Menuiserie",
+        code: "Menuiserie",
+        "souscategories": [
+          {
+            nom: "Portes",
+            description:
+              "Portes extérieures ou intérieures en inox, utilisées pour leur robustesse et leur résistance.",
+            produits: [
+              {
+                id:"5",
+                titre: "Porte moderne en inox",
+                description:
+                  "Une porte élégante et résistante pour une sécurité accrue.",
+                images: "image7.jpg",
+              },
+            ],
+          },
+        // ],
       // },
       // {
       //   nom: "Équipements extérieurs et d'aménagement urbain",
