@@ -137,7 +137,7 @@ const products = [
           },
         ],
       },
-    
+
       {
         nom: "Bureaux ",
         description:
@@ -169,8 +169,7 @@ const products = [
       },
       {
         nom: "Éléments de décoration ",
-        description:
-          "Sculptures, miroirs avec cadres en inox, lampes, etc.",
+        description: "Sculptures, miroirs avec cadres en inox, lampes, etc.",
         image: "/products/decoration/decoration.jpeg",
         produits: [
           {
@@ -181,8 +180,7 @@ const products = [
             images: "image7.jpg",
           },
         ],
-      }
-
+      },
     ],
   },
   {
@@ -193,6 +191,7 @@ const products = [
         nom: "Portes",
         description:
           "Portes extérieures ou intérieures en inox, utilisées pour leur robustesse et leur résistance.",
+        image: "/products/portes/porte.jpeg",
         produits: [
           {
             id: "5",
@@ -203,66 +202,70 @@ const products = [
           },
         ],
       },
-      // ],
-      // },
-      // {
-      //   nom: "Équipements extérieurs et d'aménagement urbain",
-      //   code: "EEAU",
-      //   "souscategories": [
-      //     {
-      //       nom: "Portes",
-      //       description:
-      //         "Portes extérieures ou intérieures en inox, utilisées pour leur robustesse et leur résistance.",
-      //       produits: [
-      //         {
-      //           id:"6",
-      //           titre: "Porte moderne en inox",
-      //           description:
-      //             "Une porte élégante et résistante pour une sécurité accrue.",
-      //           images: "image7.jpg",
-      //         },
-      //       ],
-      //     },
-      //   ],
-      // },
-      // {
-      //   nom: "Équipements sanitaires et industriels",
-      //   code: "ESI",
-      //   "souscategories": [
-      //     {
-      //       nom: "Portes",
-      //       description:
-      //         "Portes extérieures ou intérieures en inox, utilisées pour leur robustesse et leur résistance.",
-      //       produits: [
-      //         {
-      //           id:"7",
-      //           titre: "Porte moderne en inox",
-      //           description:
-      //             "Une porte élégante et résistante pour une sécurité accrue.",
-      //           images: "image7.jpg",
-      //         },
-      //       ],
-      //     },
-      //   ],
-      // },
-      // {
-      //   nom: "Composants architecturaux",
-      //   code: "CA",
-      //   "souscategories": [
-      //     {
-      //       nom: "Portes",
-      //       description:
-      //         "Portes extérieures ou intérieures en inox, utilisées pour leur robustesse et leur résistance.",
-      //       produits: [
-      //         {
-      //           id:"8",
-      //           titre: "Porte moderne en inox",
-      //           description:
-      //             "Une porte élégante et résistante pour une sécurité accrue.",
-      //           images: "image7.jpg",
-      //         },
-      //       ],
-      //     },
+      {
+        nom: "Fenêtres",
+        description:
+          "Cadres de fenêtres, offrant un look moderne et une haute résistance aux intempéries.",
+        image: "/products/fenetres/fenetre.jpeg",
+        produits: [
+          {
+            id: "5",
+            titre: "Porte moderne en inox",
+            description:
+              "Une porte élégante et résistante pour une sécurité accrue.",
+            images: "image7.jpg",
+          },
+        ],
+      },
+      {
+        nom: "Volets roulants",
+        description: "Avec des matériaux inox pour une meilleure durée de vie.",
+        image: "/products/volets/volet.jpeg",
+        produits: [
+          {
+            id: "5",
+            titre: "Porte moderne en inox",
+            description:
+              "Une porte élégante et résistante pour une sécurité accrue.",
+            images: "image7.jpg",
+          },
+        ],
+      },
+      {
+        nom: "Portails et grilles",
+        description:
+          "Portails extérieurs et grilles de sécurité fabriqués en inox.",
+        image: "/products/portails/portail.jpeg",
+        produits: [
+          {
+            id: "5",
+            titre: "Porte moderne en inox",
+            description:
+              "Une porte élégante et résistante pour une sécurité accrue.",
+            images: "image7.jpg",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    nom: "Équipements sanitaires et industriels",
+    code: "ESI",
+    souscategories: [
+      {
+        nom: "Sanitaires ",
+        description:
+          "Lavabos, douches, et autres équipements sanitaires en inox pour leur résistance et leur facilité d’entretien.",
+        produits: [
+          {
+            id: "7",
+            titre: "Porte moderne en inox",
+            description:
+              "Une porte élégante et résistante pour une sécurité accrue.",
+            images: "image7.jpg",
+          },
+        ],
+      },
     ],
   },
 ];
