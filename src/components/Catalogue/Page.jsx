@@ -8,7 +8,7 @@ const ProductListWithCategories = () => {
     useEffect(() => {
       window.scrollTo(0, 0);
     }, []);
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState('');
 
   const filteredCategories = products
     .map((category) => {
