@@ -3,7 +3,6 @@ import { Button } from "../navbar/Button";
 import { motion } from "framer-motion";
 import "./Hero.css";
 import "../../App.css";
-import { Link } from "react-router-dom";
 
 function Hero() {
   const [videoSource, setVideoSource] = useState(

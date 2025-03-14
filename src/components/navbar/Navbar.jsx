@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FiMenu } from "react-icons/fi";
-import { IoClose } from "react-icons/io5";
+
 import "./Navbar.css";
 function Navbar() {
   const [click, setClick] = useState(false);

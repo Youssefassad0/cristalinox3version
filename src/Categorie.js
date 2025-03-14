@@ -235,7 +235,7 @@ const products = [
         nom: "Portails et grilles",
         description:
           "Portails extérieurs et grilles de sécurité fabriqués en inox.",
-        image: "/products/portails/portail.jpeg",
+        image: "/products/portails/Portail.jpeg",
         produits: [
           {
             id: "5",
