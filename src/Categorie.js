@@ -220,7 +220,7 @@ const products = [
       {
         nom: "Volets roulants",
         description: "Avec des matériaux inox pour une meilleure durée de vie.",
-        image: "/products/volets/volet.jpeg",
+        image: "/products/Volets/volet.jpeg",
         produits: [
           {
             id: "5",
