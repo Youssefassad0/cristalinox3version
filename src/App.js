@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
@@ -16,11 +21,46 @@ function AnimatedRoutes() {
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<PageTransition><Home /></PageTransition>} />
-        <Route path="/about" element={<PageTransition><About /></PageTransition>} />
-        <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
-        <Route path="/FAQ" element={<PageTransition><FAQ /></PageTransition>} />
-        <Route path="/catalogue" element={<PageTransition><ProductListWithCategories /></PageTransition>} />
+        <Route
+          path="/"
+          element={
+            <PageTransition>
+              <Home />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <PageTransition>
+              <About />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <PageTransition>
+              <Contact />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/FAQ"
+          element={
+            <PageTransition>
+              <FAQ />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/catalogue"
+          element={
+            <PageTransition>
+              <ProductListWithCategories />
+            </PageTransition>
+          }
+        />
       </Routes>
     </AnimatePresence>
   );

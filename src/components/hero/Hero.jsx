@@ -53,7 +53,7 @@ function Hero() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.8 }}
       >
-        CristalInox
+        CRISTAL INOX
       </motion.h1>
       <motion.div
         className="hero-btns"

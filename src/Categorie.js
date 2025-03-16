@@ -6,6 +6,7 @@ const products = [
       {
         nom: "Chaises",
         description: "En inox pour un design moderne et épuré.",
+        idcode:1,
         image: "/products/chaises/chaise1.jpeg",
         produits: [
           {
@@ -76,6 +77,7 @@ const products = [
         nom: "Tables",
         description:
           "Tables à manger, de bureau, ou de café avec des pieds en inox.",
+        idcode:2,
         image: "/products/tables/tablev6.jpeg",
 
         produits: [
@@ -142,6 +144,7 @@ const products = [
         nom: "Bureaux ",
         description:
           "Sur mesure, avec des structures en inox pour une allure contemporaine.",
+        idcode:3,
         image: "/products/bureaux/bureaux.jpg",
         produits: [
           {
@@ -156,6 +159,7 @@ const products = [
       {
         nom: "Bibliothèques et étagères",
         description: "Avec des étagères en inox pour un aspect industriel.",
+        idcode:4,
         image: "/products/biblio/bibliotheque.jpg",
         produits: [
           {
@@ -170,6 +174,7 @@ const products = [
       {
         nom: "Éléments de décoration ",
         description: "Sculptures, miroirs avec cadres en inox, lampes, etc.",
+        idcode:5,
         image: "/products/decoration/decoration.jpeg",
         produits: [
           {
@@ -191,6 +196,7 @@ const products = [
         nom: "Portes",
         description:
           "Portes extérieures ou intérieures en inox, utilisées pour leur robustesse et leur résistance.",
+        idcode:6,
         image: "/products/portes/porte.jpeg",
         produits: [
           {
@@ -206,6 +212,7 @@ const products = [
         nom: "Fenêtres",
         description:
           "Cadres de fenêtres, offrant un look moderne et une haute résistance aux intempéries.",
+        idcode:7,
         image: "/products/fenetres/fenetre.jpeg",
         produits: [
           {
@@ -220,6 +227,7 @@ const products = [
       {
         nom: "Volets roulants",
         description: "Avec des matériaux inox pour une meilleure durée de vie.",
+        idcode:8,
         image: "/products/Volets/volet.jpeg",
         produits: [
           {
@@ -235,6 +243,7 @@ const products = [
         nom: "Portails et grilles",
         description:
           "Portails extérieurs et grilles de sécurité fabriqués en inox.",
+        idcode:9,
         image: "/products/portails/Portail.jpeg",
         produits: [
           {
@@ -254,6 +263,7 @@ const products = [
     souscategories: [
       {
         nom: "Sanitaires ",
+        idcode:10,
         image: "/products/industrie/sanitaire.jpeg",
         description:
           "Lavabos, douches, et autres équipements sanitaires en inox pour leur résistance et leur facilité d’entretien.",
@@ -269,6 +279,7 @@ const products = [
       },
       {
         nom: "Tuyauteries ",
+        idcode:11,
         image: "/products/industrie/tuyautrie.jpeg",
         description:
           "Conduites, tuyaux et raccords en inox pour le transport de fluides dans les systèmes industriels.",
@@ -284,6 +295,7 @@ const products = [
       },
       {
         nom: "Réservoirs",
+        idcode:12,
         image: "/products/industrie/reservoir.jpeg",
         description:
           "Réservoirs de stockage ou cuves en inox utilisés dans l'industrie alimentaire, chimique, ou pharmaceutique",
@@ -299,6 +311,7 @@ const products = [
       },
       {
         nom: "Machines industrielles ",
+        idcode:13,
         image: "/products/industrie/machine.jpg",
         description:
           "Composants de machines, comme des supports ou des éléments en inox pour leur robustesse et leur résistance à la chaleur",
