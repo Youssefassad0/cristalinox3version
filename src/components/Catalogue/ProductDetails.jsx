@@ -8,7 +8,7 @@ const ProductDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  // Recherche du produit en fonction de l'id
+ 
   const product = products
     .flatMap((category) =>
       category.souscategories.flatMap((subCategory) => subCategory.produits)
