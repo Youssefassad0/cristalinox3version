@@ -32,7 +32,9 @@ const ProductListWithFilters = () => {
       setFilteredProducts([]);
     }
   }, [searchTerm, idcode]);
-
+  const handleProductClick = (id) => {
+    navigate(`/product/${id}`);
+  };
   return (
     <div className="products_container">
       <div className="product-list">
@@ -43,7 +45,11 @@ const ProductListWithFilters = () => {
         <div className="product-grid">
           {filteredProducts.length > 0 ? (
             filteredProducts.map((product) => (
-              <div key={product.id} className="product-card">
+              <div
+                key={product.id}
+                className="product-card"
+                onClick={() => handleProductClick(product.id)}
+              >
                 <img src={product.images} alt={product.titre} />
                 <h3>{product.titre}</h3>
               </div>
