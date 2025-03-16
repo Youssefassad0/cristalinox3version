@@ -35,13 +35,10 @@ const ProductListWithFilters = () => {
 
   return (
     <div className="products_container">
-
-
       <div className="product-list">
-              {/* Bouton Retour */}
-      <button className="back-button" onClick={() => navigate(-1)}>
-        ← Retour
-      </button>
+        <button className="back-button" onClick={() => navigate(-1)}>
+          ← Retour
+        </button>
         <h2>Nos Produits</h2>
         <div className="product-grid">
           {filteredProducts.length > 0 ? (

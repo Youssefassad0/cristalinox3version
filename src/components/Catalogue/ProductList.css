@@ -50,6 +50,7 @@
 .product-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  
 }
 
 /* Image du produit */
@@ -60,11 +61,16 @@
   border-radius: 8px;
 }
 
-/* Titre du produit */
 .product-card h3 {
   margin-top: 10px;
   font-size: 16px;
   color: #333;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.product-card h3:hover {
+  color: red;
+  transform: scale(1.02);
 }
 
 /* Section filtres */

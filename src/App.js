@@ -69,7 +69,14 @@ function AnimatedRoutes() {
               <ProductListWithFilters />
             </PageTransition>
           }
-        />
+        />    <Route
+        path="/catalogue/:idcode"
+        element={
+          <PageTransition>
+            <ProductListWithFilters />
+          </PageTransition>
+        }
+      />
       </Routes>
       
     </AnimatePresence>
