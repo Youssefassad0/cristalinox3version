@@ -11,6 +11,23 @@
   padding: 30px;
   background: #ffffff;
 }
+.back-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: inline-block;
+  transition: background 0.3s ease-in-out;
+  height: 50px;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
 
 .product-grid {
   display: grid;

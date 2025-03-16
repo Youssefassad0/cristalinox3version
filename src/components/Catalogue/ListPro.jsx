@@ -1,18 +1,62 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import "./ProductList.css";
 import products from "../../Categorie";
 
 const ProductListWithFilters = () => {
+  const { idcode } = useParams();
+  const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState("");
+  const [filteredProducts, setFilteredProducts] = useState([]);
 
-  // Filtrer les produits en fonction du titre
-  const filteredProducts = products.filter((product) =>
-    product.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  useEffect(() => {
+    let selectedSubCategory = null;
+
+    products.forEach((category) => {
+      category.souscategories.forEach((subCategory) => {
+        if (String(subCategory.idcode) === idcode) {
+          selectedSubCategory = subCategory;
+        }
+      });
+    });
+
+    console.log("Sous-catégorie trouvée :", selectedSubCategory);
+
+    if (selectedSubCategory) {
+      setFilteredProducts(
+        selectedSubCategory.produits.filter((product) =>
+          product.titre.toLowerCase().includes(searchTerm.toLowerCase())
+        )
+      );
+    } else {
+      setFilteredProducts([]);
+    }
+  }, [searchTerm, idcode]);
 
   return (
     <div className="products_container">
-      {/* Section des filtres (20%) */}
+
+
+      <div className="product-list">
+              {/* Bouton Retour */}
+      <button className="back-button" onClick={() => navigate(-1)}>
+        ← Retour
+      </button>
+        <h2>Nos Produits</h2>
+        <div className="product-grid">
+          {filteredProducts.length > 0 ? (
+            filteredProducts.map((product) => (
+              <div key={product.id} className="product-card">
+                <img src={product.images} alt={product.titre} />
+                <h3>{product.titre}</h3>
+              </div>
+            ))
+          ) : (
+            <p>Aucun produit trouvé pour cette sous-catégorie.</p>
+          )}
+        </div>
+      </div>
+
       <div className="products_filters">
         <h2>Filtres</h2>
         <input
@@ -22,19 +66,6 @@ const ProductListWithFilters = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
           className="search-input"
         />
-      </div>
-
-      {/* Section des produits (80%) */}
-      <div className="product-list">
-        <h2>Nos Produits</h2>
-        <div className="product-grid">
-          {filteredProducts.map((product) => (
-            <div key={product.id} className="product-card">
-              <img src={product.img} alt={product.title} />
-              <h3>{product.title}</h3>
-            </div>
-          ))}
-        </div>
       </div>
     </div>
   );
