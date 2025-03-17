@@ -6,20 +6,20 @@ const QrLinks = () => {
   const links = [
     {
       name: "Facebook",
-      url: "https://www.facebook.com/CristalInox",
+      url: "https://web.facebook.com/aziz.assad.969",
       color: "#3b5998",
     },
     {
       name: "Instagram",
-      url: "https://www.instagram.com/CristalInox",
+      url: "https://www.instagram.com/assad_inox/",
       color: "#E1306C",
     },
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/company/CristalInox",
+      url: "https://www.linkedin.com/in/aziz-assad-ba737052/",
       color: "#0077b5",
     },
-    { name: "WhatsApp", url: "https://wa.me/2120661471841", color: "#25D366" },
+    { name: "WhatsApp", url: "https://wa.me/212661471841", color: "#25D366" },
   ];
 
   return (

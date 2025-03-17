@@ -42,7 +42,7 @@ function Footer() {
             <ul>
               <li>
                 <Link to="" target="_blank">
-                  <i className="fa-solid fa-phone"></i> +212 0661471841
+                  <i className="fa-solid fa-phone"></i> +212 661471841
                 </Link>
               </li>
               <li>

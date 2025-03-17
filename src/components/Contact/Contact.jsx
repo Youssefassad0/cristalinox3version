@@ -13,10 +13,10 @@ function Contact() {
     window.scrollTo(0, 0);
   }, []);
 
-  const copyEmail = () => {
+  const copierEmail = () => {
     const email = "CristalInox@gmail.com";
     navigator.clipboard.writeText(email);
-    alert("Email copied to clipboard!");
+    alert("Email copié dans le presse-papiers !");
   };
 
   return (
@@ -26,20 +26,20 @@ function Contact() {
           <div className="contactForm">
             <motion.form action="#">
               <h1 className="sub-heading">Nous contacter</h1>
-              <p className="para para2">N'hésitez pas à Nous contacter.</p>
-              <input type="text" className="input" placeholder="Your name" />
-              <input type="text" className="input" placeholder="Your email" />
-              <input type="text" className="input" placeholder="Your subject" />
+              <p className="para para2">N'hésitez pas à nous contacter.</p>
+              <input type="text" className="input" placeholder="Votre nom" />
+              <input type="text" className="input" placeholder="Votre email" />
+              <input type="text" className="input" placeholder="Sujet" />
               <textarea
                 className="input"
                 cols="30"
                 rows="5"
-                placeholder="Your message..."
+                placeholder="Votre message..."
               ></textarea>
               <motion.input
                 type="submit"
                 className="input submit"
-                value="Send Message"
+                value="Envoyer le message"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               />
@@ -64,20 +64,20 @@ function Contact() {
               {[
                 {
                   data: maps,
-                  title: "Location",
-                  text: "Casablanca , Tit Mellil",
+                  title: "Localisation",
+                  text: "Casablanca, Tit Mellil",
                 },
                 {
                   data: gmail,
                   title: "Email",
                   text: "CristalInox@gmail.com",
-                  action: copyEmail,
+                  action: copierEmail,
                 },
                 {
                   data: phone,
-                  title: "Phone",
-                  text: "+2120661471841",
-                  link: "tel:+2120661471841",
+                  title: "Téléphone",
+                  text: "+212661471841",
+                  link: "tel:+212661471841",
                 },
               ].map((item, index) => (
                 <motion.div
