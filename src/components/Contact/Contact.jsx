@@ -1,22 +1,46 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
+import Lottie from "lottie-react";
 import gmail from "../../assets/gmail.json";
 import phone from "../../assets/phone.json";
 import maps from "../../assets/maps.json";
-import Lottie from "lottie-react";
 import FAQ from "./Faqs";
 import QrLinks from "./CodeQR";
+import NewsLetter from "./Newsletter";
 
 function Contact() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const copierEmail = () => {
-    const email = "CristalInox@gmail.com";
-    navigator.clipboard.writeText(email);
-    alert("Email copié dans le presse-papiers !");
+  const form = useRef();
+  const [message, setMessage] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_9813s7b",
+        "template_dp8qcab",
+        form.current,
+        "uv-KwgdGWcnpCrbQM"
+      )
+      .then(
+        () => {
+          setMessage({ text: "Message envoyé avec succès !", type: "success" });
+          form.current.reset();
+
+          setTimeout(() => setMessage(null), 2000);
+        },
+        (error) => {
+          setMessage({ text: "Erreur lors de l'envoi !", type: "error" });
+
+          setTimeout(() => setMessage(null), 2000);
+        }
+      );
   };
 
   return (
@@ -24,17 +48,37 @@ function Contact() {
       <motion.div className="contact_body" initial="hidden" animate="visible">
         <section className="contact_section">
           <div className="contactForm">
-            <motion.form action="#">
+            <motion.form ref={form} onSubmit={sendEmail}>
               <h1 className="sub-heading">Nous contacter</h1>
               <p className="para para2">N'hésitez pas à nous contacter.</p>
-              <input type="text" className="input" placeholder="Votre nom" />
-              <input type="text" className="input" placeholder="Votre email" />
-              <input type="text" className="input" placeholder="Sujet" />
+              <input
+                type="text"
+                name="user_name"
+                className="input"
+                placeholder="Votre nom"
+                required
+              />
+              <input
+                type="email"
+                name="user_email"
+                className="input"
+                placeholder="Votre email"
+                required
+              />
+              <input
+                type="text"
+                name="subject"
+                className="input"
+                placeholder="Sujet"
+                required
+              />
               <textarea
+                name="message"
                 className="input"
                 cols="30"
                 rows="5"
                 placeholder="Votre message..."
+                required
               ></textarea>
               <motion.input
                 type="submit"
@@ -44,7 +88,9 @@ function Contact() {
                 whileTap={{ scale: 0.95 }}
               />
             </motion.form>
-
+            {message && (
+              <div className={`alert ${message.type}`}>{message.text}</div>
+            )}
             <motion.div className="map-container">
               <div className="mapBg"></div>
               <div className="map">
@@ -67,12 +113,7 @@ function Contact() {
                   title: "Localisation",
                   text: "Casablanca, Tit Mellil",
                 },
-                {
-                  data: gmail,
-                  title: "Email",
-                  text: "CristalInox@gmail.com",
-                  action: copierEmail,
-                },
+                { data: gmail, title: "Email", text: "CristalInox@gmail.com" },
                 {
                   data: phone,
                   title: "Téléphone",
@@ -89,9 +130,7 @@ function Contact() {
                     <Lottie animationData={item.data} className="lottie-icon" />
                   </div>
                   <article className="text">
-                    <h1 className="sub-heading" onClick={item.action}>
-                      {item.title}
-                    </h1>
+                    <h1 className="sub-heading">{item.title}</h1>
                     {item.link ? (
                       <a href={item.link} className="para">
                         {item.text}
@@ -108,6 +147,7 @@ function Contact() {
       </motion.div>
       <QrLinks />
       <FAQ />
+      <NewsLetter />
     </>
   );
 }

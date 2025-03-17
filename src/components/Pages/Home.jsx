@@ -3,6 +3,7 @@ import Hero from "../hero/Hero";
 import Cards from "../cardItems/Cards";
 import Valeurs from "../cardItems/Card_Why/Valeurs";
 import Slider from "../Sliders/Slider";
+// import NewsLetter from "../Contact/Newsletter";
 
 function Home() {
   useEffect(() => {
@@ -14,6 +15,7 @@ function Home() {
       <Cards />
       <Valeurs />
       <Slider />
+      {/* <NewsLetter /> */}
     </>
   );
 }
