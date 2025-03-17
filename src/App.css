@@ -6,7 +6,7 @@
 }
 
 .home,
-.about,
+
 .products,
 .sign-up {
   display: flex;
@@ -16,16 +16,6 @@
   font-size: 3rem;
 }
 
-.about {
-  position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("/public/images/logo_bg.png");
-  background-size: cover; 
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  padding: 50px;
-  text-align: center;
-}
 
 
 .products {

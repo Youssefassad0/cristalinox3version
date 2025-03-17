@@ -16,6 +16,7 @@ import Categorie from "./components/Catalogue/Page";
 import ProductListWithCategories from "./components/Catalogue/Page";
 import ProductListWithFilters from "./components/Catalogue/ListPro";
 import ProductDetail from "./components/Catalogue/ProductDetails";
+import Abouttest from "./components/about/AboutTest";
 
 function AnimatedRoutes() {
   const location = useLocation(); // Détecte la route actuelle
@@ -35,7 +36,7 @@ function AnimatedRoutes() {
           path="/about"
           element={
             <PageTransition>
-              <About />
+              <Abouttest />
             </PageTransition>
           }
         />
