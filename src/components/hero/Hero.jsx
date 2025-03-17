@@ -62,6 +62,7 @@ function Hero() {
         transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
       >
           <Button
+          link='contact'
             className="btns"
             buttonStyle="btn--outline"
             buttonSize="btn--large"
@@ -69,6 +70,7 @@ function Hero() {
             Demander un Devis
           </Button>
         <Button
+        link='catalogue'
           className="btns"
           buttonStyle="btn--primary"
           buttonSize="btn--large"

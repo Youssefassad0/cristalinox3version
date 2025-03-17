@@ -20,7 +20,7 @@ function Cards() {
                 src="images/modern-staircase.jfif"
                 text="Escaliers en acier inoxydable sur mesure pour des intérieurs modernes"
                 label="Décoration intérieure"
-                path="/projets"
+                path="/catalogue"
               />
             </motion.li>
             <motion.li
@@ -34,7 +34,7 @@ function Cards() {
                 src="images/industrial-piping.jfif"
                 text="Solutions de tuyauterie industrielle de haute qualité pour votre entreprise"
                 label="Tuyauterie"
-                path="/services"
+                path="/catalogue"
               />
             </motion.li>
             <motion.li
@@ -48,7 +48,7 @@ function Cards() {
                 src="images/metal-gate.jfif"
                 text="Portails en métal élégants et durables adaptés à vos besoins"
                 label="Métallerie"
-                path="/produits"
+                path="/catalogue"
               />
             </motion.li>
           </ul>

@@ -10,7 +10,6 @@ function Slider() {
     "images/p5.jpeg",
     "images/p6.jpeg",
     "images/p7.jpeg",
-   
   ];
 
   return (
@@ -18,7 +17,11 @@ function Slider() {
       <div className="banner">
         <div className="slider" style={{ "--quantity": images.length }}>
           {images.map((imgSrc, index) => (
-            <div key={index} className="item_slider" style={{ "--position": index + 1 }}>
+            <div
+              key={index}
+              className="item_slider"
+              style={{ "--position": index + 1 }}
+            >
               <img src={imgSrc} alt={`Slide ${index + 1}`} />
             </div>
           ))}
@@ -26,13 +29,14 @@ function Slider() {
         <div className="content">
           <h1 data-content="Cristal Inox">Cristal Inox</h1>
           <div className="author">
-        
             <p>
-    High-quality **inox solutions** for <b>decoration, medical, and piping</b> industries.
-  </p>
-  <p>
-    Explore our latest projects and innovations in stainless steel fabrication.
-  </p>
+              Solutions **inox de haute qualité** pour les secteurs de la{" "}
+              <b>décoration, médical et tuyauterie</b>.
+            </p>
+            <p>
+              Découvrez nos derniers projets et innovations dans la fabrication
+              d'acier inoxydable.
+            </p>
           </div>
           <div className="model"></div>
         </div>

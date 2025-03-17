@@ -4,6 +4,9 @@ import "./ProductList.css";
 import products from "../../Categorie";
 
 const ProductListWithFilters = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const { idcode } = useParams();
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState("");
