@@ -1,23 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./test.css";
 import { motion } from "framer-motion";
 
 const Abouttest = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <section className="about2">
         <div className="back">
           <div className="container2">
             <span>À Propos de Nous</span>
-            <h1>Qui somme nous ?</h1>
+            <h1>Experts en Acier Inoxydable & Innovation</h1>
           </div>
-          <img src="/images/about_banner.jpeg" alt="" className="img2" />
+          <img
+            src="/images/about_banner.jpeg"
+            alt="Cristal Inox"
+            className="img2"
+          />
         </div>
         <div className="container2 flex mtop">
           <div className="left row">
             <div className="heading">
-              <h1>Our Agency Story</h1>
-              <p>Check out our company story and work process</p>
+              <h1>Votre Partenaire en Inox</h1>
+              <p>Qualité, durabilité et expertise au service de vos projets</p>
             </div>
             <motion.p
               className="about-text"
@@ -25,33 +32,46 @@ const Abouttest = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.3 }}
             >
-              Chez <strong>Cristal Inox</strong>, nous sommes passionnés par
-              l’excellence de la chaudronnerie en acier inoxydable. Fondée sur
-              un savoir-faire artisanal et une volonté d'innovation, notre
-              entreprise s'engage à fournir des solutions sur mesure pour les
-              secteurs de la décoration, du médical et de la tuyauterie
-              industrielle.
+              Chez <strong>Cristal Inox</strong>, nous sommes spécialisés dans
+              la conception et la fabrication de structures en acier inoxydable,
+              alliant design et robustesse. Grâce à notre savoir-faire unique,
+              nous répondons aux besoins des secteurs de l'architecture, du
+              médical et de l'industrie.
             </motion.p>
 
-            <button className="btn2">More About Us</button>
+            <motion.p
+              className="about-text"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.5 }}
+            >
+              Nous mettons en avant des solutions sur mesure adaptées aux
+              exigences les plus strictes, garantissant qualité, résistance et
+              finitions haut de gamme.
+            </motion.p>
+
+            <button className="btn2">Découvrir Nos Services</button>
           </div>
           <div className="right row">
-            <img src="/images/about_bg.png" alt="" />
+            <img src="/images/about_bg.png" alt="Nos réalisations en inox" />
           </div>
         </div>
+
         <motion.div
-          className="about-section"
+          className="about-prq"
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
         >
-          {" "}
-          <h3>Notre Engagement</h3>
+          <h3>Pourquoi choisir Cristal Inox ?</h3>
           <p>
-            Nous croyons que l'acier inoxydable est bien plus qu'un simple
-            matériau : c'est une promesse de durabilité, d'élégance et de
-            performance. Chaque projet que nous réalisons est conçu avec une
-            attention méticuleuse aux détails.
+            ✔️ Matériaux de qualité premium
+            <br />
+            ✔️ Fabrication sur mesure et finitions impeccables
+            <br />
+            ✔️ Solutions innovantes pour l'industrie et le design
+            <br />
+            ✔️ Engagement envers la durabilité et la performance
           </p>
         </motion.div>
       </section>

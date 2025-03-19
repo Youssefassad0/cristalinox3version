@@ -5,12 +5,59 @@
   align-items: center;
   text-align: left;
   background: #fff;
-  padding: 50px 0;
 }
+
 .back {
   height: 40vh;
+  width: 100%;
   position: relative;
+  background: linear-gradient(to bottom, #b8860b, #1a1a1a);
+  padding: 120px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
+
+.back .container2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.back .container2 span {
+  font-size: 20px;
+  display: block;
+  color: #ffd700;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.back h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.back h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #ffd700;
+  margin: auto;
+  margin-top: 10px;
+  transition: width 0.5s;
+}
+
+.back h1:hover::after {
+  width: 100px;
+}
+
 .back .img2 {
   height: 10vh;
   position: relative;
@@ -18,7 +65,11 @@
   left: 0;
   z-index: -1;
   object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+  animation: fadeInUp 1s ease-in-out;
 }
+
 .back::after {
   content: "";
   position: absolute;
@@ -29,15 +80,6 @@
   background: rgba(17, 40, 72, 0.629);
   z-index: -1;
 }
-.back .container2 {
-  color: #fff;
-  padding: 120px 0;
-}
-.back h1 {
-  font-size: 40px;
-  font-weight: 500;
-}
-
 
 .about2 .container2 {
   display: flex;
@@ -74,14 +116,25 @@
   justify-content: center;
 }
 
-.about2 .right img {
+.right img {
   width: 100%;
   max-width: 500px;
   border-radius: 10px;
   object-fit: cover;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px #ADD8E6 ;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  animation: fadeInUp 1s ease-in-out;
 }
 
+.right img:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px #E0FFFF ;
+}
+
+
+.about-prq{
+  margin-top: 30px;
+}
 .btn2 {
   display: inline-block;
   background: #2d3954;
@@ -112,9 +165,31 @@
     margin-top: 20px;
     width: 90%;
   }
-  .back::after,
-  .back .img,
   .back {
-    height: 30vh;
+    height: auto; /* Ajuste automatiquement la hauteur */
+    padding: 80px 20px; /* Moins d’espace en haut et en bas */
   }
+
+  .back .container2 {
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .back h1 {
+    font-size: 24px; /* Réduit la taille du titre */
+    line-height: 1.4; /* Meilleure lisibilité */
+    padding-bottom: 5px;
+  }
+
+  .back h1::after {
+    width: 40px; /* Réduit la taille de l’underline */
+    height: 3px;
+  }
+
+  .back .img2 {
+    width: 100%;
+    height: auto; /* Ajuste la hauteur selon l’image */
+    max-height: 150px; /* Pour éviter qu’elle ne prenne trop de place */
+  }
+
 }
