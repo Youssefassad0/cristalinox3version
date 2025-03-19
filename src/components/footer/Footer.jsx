@@ -9,7 +9,7 @@ function Footer() {
         <div className="footer-content">
           <div className="footer-sectionabout">
             <Link to="/" className="logo-footer">
-              <img src="/images/logo.png" alt="CristalInox Logo" />
+              <img src="/images/logo.png" alt="Cristal Inox Logo" />
             </Link>
             <p>
               Passionnés par l’excellence de la chaudronnerie en acier
@@ -93,7 +93,7 @@ function Footer() {
         </div>
 
         <p className="footer-bottom">
-          &copy; 2025 || Tous droits réservés par CristalInox
+          &copy; 2025 || Tous droits réservés par Cristal Inox
         </p>
       </div>
     </footer>

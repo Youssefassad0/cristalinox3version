@@ -59,7 +59,7 @@ function About() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.9 }}
         >
-          <h3>Pourquoi Choisir CristalInox ?</h3>
+          <h3>Pourquoi Choisir Cristal Inox ?</h3>
           <ul>
             <li>Savoir-faire artisanal et expertise technique</li>
             <li> Matériaux haut de gamme et finitions impeccables</li>

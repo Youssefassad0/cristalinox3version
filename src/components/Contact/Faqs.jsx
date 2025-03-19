@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import "./Faqs.css";
 const faqs = [
     {
-      question: "Qu'est-ce que CristalInox ?",
+      question: "Qu'est-ce que Cristal Inox ?",
       answer:
-        "CristalInox est une entreprise spécialisée dans la chaudronnerie inoxydable. Nous proposons des services de fabrication et de transformation d'inox pour divers secteurs comme la décoration, le médical et le tuyautage industriel. Notre mission est d'offrir des solutions sur mesure avec une qualité irréprochable, adaptées aux besoins spécifiques de nos clients."
+        "Cristal Inox est une entreprise spécialisée dans la chaudronnerie inoxydable. Nous proposons des services de fabrication et de transformation d'inox pour divers secteurs comme la décoration, le médical et le tuyautage industriel. Notre mission est d'offrir des solutions sur mesure avec une qualité irréprochable, adaptées aux besoins spécifiques de nos clients."
     },
     {
       question: "Quels types de produits fabriquez-vous ?",
@@ -15,7 +15,7 @@ const faqs = [
     {
       question: "Pourquoi choisir l'inox pour vos projets ?",
       answer:
-        "L'inox est un matériau exceptionnel grâce à sa résistance à la corrosion, sa durabilité et son esthétique moderne. Il est idéal pour des applications dans des environnements exigeants comme l'industrie alimentaire, la médecine ou l'architecture. Chez CristalInox, nous utilisons de l'inox de haute qualité pour assurer la longévité et la fiabilité de nos réalisations."
+        "L'inox est un matériau exceptionnel grâce à sa résistance à la corrosion, sa durabilité et son esthétique moderne. Il est idéal pour des applications dans des environnements exigeants comme l'industrie alimentaire, la médecine ou l'architecture. Chez Cristal Inox, nous utilisons de l'inox de haute qualité pour assurer la longévité et la fiabilité de nos réalisations."
     },
     {
       question: "Proposez-vous des services sur mesure ?",
@@ -51,7 +51,7 @@ const FAQ = () => {
 
   return (
     <div className="faq-container">
-      <h1 className="faq-title">Foire Aux Questions - CristalInox💡</h1>
+      <h1 className="faq-title">Foire Aux Questions - Cristal Inox💡</h1>
       <div className="faq-list">
         {faqs.map((faq, index) => (
           <div key={index} className="faq-item">
