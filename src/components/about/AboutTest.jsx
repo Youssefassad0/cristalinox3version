@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./test.css";
 import { motion } from "framer-motion";
+import Services from "./Services";
 
 const Abouttest = () => {
   useEffect(() => {
@@ -75,6 +76,7 @@ const Abouttest = () => {
           </p>
         </motion.div>
       </section>
+      <Services />
     </>
   );
 };

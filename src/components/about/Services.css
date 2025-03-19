@@ -1,0 +1,106 @@
+.body_service{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.container-service{
+display: flex;
+flex-wrap:wrap ;
+justify-content: space-between;
+}
+.box-service{
+    position: relative;
+    width: 350px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+.box-service::before{
+    content: '';
+    width: 50%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background: rgba(255, 255, 255, .2);
+    z-index: 2;
+    pointer-events: none;
+}
+.box-service .icon-service{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 1s;
+}
+
+.box-service:nth-child(1) .icon-service{
+    box-shadow: 0 0 0 0 #808080  ;
+    background: linear-gradient(135deg, #6c757d, #495057); /* Gris métallique */}
+.box-service:nth-child(1):hover .icon-service{
+    box-shadow: 0 0 0 400px #808080  ;
+}
+
+.box-service:nth-child(2) .icon-service{
+    box-shadow: 0 0 0 0 linear-gradient(135deg, #1e88e5, #1565c0);
+    ;
+    background: linear-gradient(135deg, #1e88e5, #1565c0);   ;
+}
+.box-service:nth-child(2):hover .icon-service{
+    box-shadow: 0 0 0 400px #1e88e5    ;
+}
+
+.box-service:nth-child(3) .icon-service{
+    box-shadow: 0 0 0 0  linear-gradient(135deg, #43a047, #2e7d32);   ;
+    background:  linear-gradient(135deg, #43a047, #2e7d32);  ;
+}
+.box-service:nth-child(3):hover .icon-service{
+    box-shadow: 0 0 0 400px #2e7d32   ;
+}
+
+.content-service{
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.box-service:hover .content-service{
+  color: #fff;
+}
+.content-service h3{
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0 ;
+}
+
+.content-service p{
+    margin: 0;
+    padding: 0;
+}
+.content-service a{
+ display: inline-block;   
+ padding: 10px 20px;
+ background: #fff;
+ border-radius: 4px;
+ text-decoration: none;
+ color: #000 ;
+ margin-top: 20px ;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
