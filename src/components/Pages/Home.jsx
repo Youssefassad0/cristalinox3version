@@ -3,6 +3,7 @@ import Hero from "../hero/Hero";
 import Cards from "../cardItems/Cards";
 import Valeurs from "../cardItems/Card_Why/Valeurs";
 import Slider from "../Sliders/Slider";
+import Aide from "./Aide";
 // import NewsLetter from "../Contact/Newsletter";
 
 function Home() {
@@ -15,6 +16,7 @@ function Home() {
       <Cards />
       <Valeurs />
       <Slider />
+      <Aide />
       {/* <NewsLetter /> */}
     </>
   );
