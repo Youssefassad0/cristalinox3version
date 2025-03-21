@@ -120,39 +120,48 @@
     margin-bottom: 20px;
 }
 @keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(-20px); }
-    100% { opacity: 1; transform: translateY(0); }
+  0% { opacity: 0; transform: translateY(-30px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes neonBorder {
-    0% { box-shadow: 0 0 5px darkmagenta; }
-    50% { box-shadow: 0 0 20px darkmagenta, 0 0 30px darkmagenta; }
-    100% { box-shadow: 0 0 5px darkmagenta; }
+@keyframes glowGold {
+  0% { text-shadow: 0 0 5px #FFD700, 0 0 10px #FFB000; }
+  50% { text-shadow: 0 0 10px #FFD700, 0 0 20px #FFB000; }
+  100% { text-shadow: 0 0 5px #FFD700, 0 0 10px #FFB000; }
 }
 
 @keyframes glitch {
-    0% { transform: translate(0); }
-    20% { transform: translate(-2px, 2px); }
-    40% { transform: translate(2px, -2px); }
-    60% { transform: translate(-2px, 2px); }
-    80% { transform: translate(2px, -2px); }
-    100% { transform: translate(0); }
+  0% { transform: translate(0); }
+  15% { transform: translate(-1px, 1px) skewX(2deg); }
+  30% { transform: translate(1px, -1px) skewX(-2deg); }
+  45% { transform: translate(-1px, 1px) skewX(2deg); }
+  60% { transform: translate(1px, -1px) skewX(-2deg); }
+  75% { transform: translate(0); }
 }
 
 .title_service {
-    font-size: 3rem;
-    font-weight: bold;
-    color: rgba(107, 95, 17, 0.693);
-    text-transform: uppercase;
-    text-align: center;
-    padding: 10px 20px;
-    border: 3px solid darkmagenta;
-    display: inline-block;
-    position: relative;
-    opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards, neonBorder 2s infinite alternate;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 20px;
+  display: inline-block;
+  position: relative;
+  opacity: 0;
+  animation: fadeIn 1.2s ease-in-out forwards, glowGold 3s infinite alternate;
+  
+  /* Dégradé doré + inox */
+  background: linear-gradient(45deg, #141412, #C0C0C0, #c99f3667);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Bordure élégante */
+  border: 3px solid transparent;
+  border-image: linear-gradient(45deg, #FFD700, #C0C0C0, #DAA520);
+  border-image-slice: 1;
 }
 
 .title_service:hover {
-    animation: fadeIn 1s ease-in-out forwards, neonBorder 2s infinite alternate, glitch 0.5s infinite;
+  animation: fadeIn 1.2s ease-in-out forwards, glowGold 3s infinite alternate, glitch 0.3s ease-in-out infinite;
+  cursor: pointer;
 }

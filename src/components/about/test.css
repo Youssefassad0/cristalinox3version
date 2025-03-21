@@ -150,6 +150,15 @@
   background: #1a2538;
 }
 
+.about-prq {
+  background: linear-gradient(135deg, rgba(70, 130, 180, 0.2), rgba(138, 43, 226, 0.2));
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 70%;
+}
+
 @media screen and (max-width: 768px) {
   .about2 .container2 {
     flex-direction: column;

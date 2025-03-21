@@ -59,22 +59,23 @@ const Abouttest = () => {
         </div>
 
         <motion.div
-          className="about-prq"
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: 0.6 }}
-        >
-          <h3>Pourquoi choisir Cristal Inox ?</h3>
-          <p>
-            ✔️ Matériaux de qualité premium
-            <br />
-            ✔️ Fabrication sur mesure et finitions impeccables
-            <br />
-            ✔️ Solutions innovantes pour l'industrie et le design
-            <br />
-            ✔️ Engagement envers la durabilité et la performance
-          </p>
-        </motion.div>
+  className="about-prq"
+  initial={{ opacity: 0, clipPath: "inset(0% 50% 0% 50%)" }}
+  whileInView={{ opacity: 1, clipPath: "inset(0% 0% 0% 0%)" }}
+  transition={{ duration: 1, ease: "easeOut" }}
+>
+  <h3>Pourquoi choisir Cristal Inox ?</h3>
+  <p>
+    ✔️ Matériaux de qualité premium
+    <br />
+    ✔️ Fabrication sur mesure et finitions impeccables
+    <br />
+    ✔️ Solutions innovantes pour l'industrie et le design
+    <br />
+    ✔️ Engagement envers la durabilité et la performance
+  </p>
+</motion.div>
+
       </section>
       <Services />
     </>
