@@ -1,5 +1,6 @@
 import React from "react";
 import "./Aide.css";
+import { Link } from "react-router-dom";
 
 const Aide = () => {
   return (
@@ -10,22 +11,21 @@ const Aide = () => {
         </div>
         <div className="aide-info">
           <h2>Besoin d’aide <span className="highlight">?</span></h2>
-          <h3>aideez-nous !</h3>
+          <h3>Contactez nous !</h3>
           <p><strong>Service client est à votre écoute !</strong></p>
           <ul>
-            <li>📧 info@dekoflix.fr</li>
-            <li>📞 +33 1 40 36 56 90</li>
-            <li>📅 +33 7 45 12 22 15</li>
+            <li>📧 cristalinox@gmail.com</li>
+            <li>📞 +212 661 471 841 </li>
           </ul>
           <h4>📍 Venez nous rendre visite !</h4>
           <p><strong>Adresse de notre boutique :</strong></p>
           <ul>
-            <li>📌 35 rue de Tanger - Paris</li>
-            <li>📆 Du mardi au samedi</li>
-            <li>⏰ De 10h à 18h</li>
+            <li>📌 HH42+M3 Titt Mellilen - Maroc</li>
+            <li>📆 Du Lundi au samedi</li>
+            <li>⏰ De 8h à 18h</li>
           </ul>
           <p>Notre équipe vous accueille avec le sourire ! 😊</p>
-          <button className="aide-button">aideez-nous !</button>
+          <Link to="/contact" className="aide-button">contactez-nous !</Link>
         </div>
       </div>
     </div>
