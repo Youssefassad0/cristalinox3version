@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap");
 .aide-container {
   display: flex;
   justify-content: center;
@@ -6,6 +6,7 @@
   height: 100vh;
   background-color: #f8f8f8;
   padding: 20px;
+  width: 100%;
 }
 
 .aide-card {
@@ -30,7 +31,6 @@
   object-fit: cover;
 }
 
-
 .aide-info {
   font-family: "Host Grotesk", sans-serif;
 
@@ -43,7 +43,7 @@
   line-height: 1.9em;
   margin-left: 40px;
 }
-.aide-info h2{
+.aide-info h2 {
   font-family: "Host Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -72,19 +72,19 @@
   background: #d4af37;
 } */
 
-/* From Uiverse.io by nikk7007 */ 
+/* From Uiverse.io by nikk7007 */
 .aide-button {
   align-self: flex-start;
   margin-top: auto;
 
-  --color: #00A97F;
+  --color: #00a97f;
   padding: 0.8em 1.7em;
   background-color: transparent;
-  border-radius: .3em;
+  border-radius: 0.3em;
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
   font-weight: 400;
   font-size: 16px;
   border: 1px solid;
@@ -93,11 +93,11 @@
   color: var(--color);
   z-index: 1;
   text-decoration: none;
+}
 
- }
- 
- .aide-button::before, .aide-button::after {
-  content: '';
+.aide-button::before,
+.aide-button::after {
+  content: "";
   display: block;
   width: 50px;
   height: 50px;
@@ -107,34 +107,37 @@
   z-index: -1;
   background-color: var(--color);
   transition: 1s ease;
- }
- 
- .aide-button::before {
+}
+
+.aide-button::before {
   top: -1em;
   left: -1em;
- }
- 
- .aide-button::after {
+}
+
+.aide-button::after {
   left: calc(100% + 1em);
   top: calc(100% + 1em);
- }
- 
- .aide-button:hover::before, .aide-button:hover::after {
+}
+
+.aide-button:hover::before,
+.aide-button:hover::after {
   height: 410px;
   width: 410px;
- }
- 
- .aide-button:hover {
+}
+
+.aide-button:hover {
   color: rgb(10, 25, 30);
- }
- 
- .aide-button:active {
-  filter: brightness(.8);
- }
- 
+}
+
+.aide-button:active {
+  filter: brightness(0.8);
+}
 
 /* Responsive */
 @media screen and (max-width: 768px) {
+  .aide-container {
+    width: 100%;
+  }
   .aide-card {
     flex-direction: column;
     text-align: center;

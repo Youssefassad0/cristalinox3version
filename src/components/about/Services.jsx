@@ -43,11 +43,10 @@ function Services() {
             <motion.div
               className="box-service"
               key={service.id}
-              initial={{ opacity: 0, y: 50 }} // Commence caché et plus bas
-              whileInView={{ opacity: 1, y: 0 }} // Devient visible quand dans la vue
-              transition={{ duration: 0.9, delay: index * 0.3 }} // Décalage progressif
-              viewport={{ once: true }} // Animation ne se déclenche qu'une seule fois
-            >
+              initial={{ opacity: 0, y: 50 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              transition={{ duration: 0.9, delay: index * 0.3 }} 
+              viewport={{ once: true }}  >
               {/* <div className="icon-service">{service.id}</div> */}
               <Lottie animationData={service.icon} 
               style={{ fill: "white" }}
