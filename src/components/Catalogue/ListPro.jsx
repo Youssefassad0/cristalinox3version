@@ -53,7 +53,7 @@ const ProductListWithFilters = () => {
                 className="product-card"
                 onClick={() => handleProductClick(product.id)}
               >
-                <img src={product.images} alt={product.titre} />
+                <img src={product.images} alt={product.titre} onContextMenu={(e) => e.preventDefault()} />
                 <h3>{product.titre}</h3>
               </div>
             ))
