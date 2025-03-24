@@ -10,67 +10,88 @@ const products = [
         image: "/products/chaises/chaise1.jpeg",
         produits: [
           {
-            id: "1",
+            id: "c1",
             titre: "Chaise moderne en inox",
             description:
               "Une chaise élégante en inox avec un design minimaliste.",
             images: "/products/chaises/chaise1.jpeg",
           },
           {
-            id: "2",
+            id: "c2",
             titre: "Chaise 2  moderne en inox",
             description:
               "Une chaise élégante en inox avec un design minimaliste.",
             images: ["/products/chaises/chaise2.jpeg"],
           },
           {
-            id: "3",
+            id: "c3",
             titre: "Chaise 3 moderne en inox",
             description:
               "Une chaise élégante en inox avec un design minimaliste.",
             images: "/products/chaises/chaise3.jpeg",
           },
           {
-            id: "4",
+            id: "c4",
             titre: "Chaise 1 de bar en inox",
             description:
               "Haute et élégante, idéale pour les comptoirs et bars.",
             images: "/products/chaises/chaiseb1.jpg",
           },
           {
-            id: "5",
+            id: "c5",
             titre: "Chaise 2 de bar en inox",
             description:
               "Haute et élégante, idéale pour les comptoirs et bars.",
             images: "/products/chaises/chaiseb2.jpg",
           },
           {
-            id: "6",
+            id: "c6",
             titre: "Chaise 1 avec accoudoirs en inox ",
             description: "Confortable, avec des accoudoirs intégrés .",
             images: "/products/chaises/chaisea1.jpg",
           },
           {
-            id: "7",
+            id: "c7",
             titre: "Chaise 2 avec accoudoirs en inox ",
             description:
               "Confortable, Chaise de chirurgien avec accoudoirs pivotants .",
             images: "/products/chaises/chaisea2.jpg",
           },
           {
-            id: "8",
+            id: "c8",
             titre: "Chaise 1 pliante en inox",
             description:
               "Pratique et légère, parfaite pour les espaces réduits.",
             images: "/products/chaises/chaisep1.jpeg",
           },
           {
-            id: "9",
+            id: "c9",
             titre: "Chaise 2 pliante en inox",
             description:
               "Pratique et légère, parfaite pour les espaces réduits.",
             images: "/products/chaises/chaisep2.jpeg",
           },
+          {
+            id: "c10",
+            titre: "Chaise moderne en inox",
+            description:
+              "Une chaise élégante en inox avec un design minimaliste.",
+            images: "/products/chaises/chaise7.jpeg",
+          },
+          {
+            id: "c11",
+            titre: "Chaise moderne en inox",
+            description:
+              "Une chaise élégante en inox avec un design minimaliste.",
+            images: "/products/chaises/chaise8.jpeg",
+          },   {
+            id: "c11",
+            titre: "Chaise moderne en inox",
+            description:
+              "Une chaise élégante en inox avec un design minimaliste.",
+            images: "/products/chaises/chaise9.jpeg",
+          },
+          
         ],
       },
       {
