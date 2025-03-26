@@ -279,26 +279,43 @@ const products = [
             titre: "Étagère design en inox ",
             description:
               "Alliant élégance et modernité, cette étagère en inox doré avec des plateaux en verre apporte une touche de luxe à tout intérieu",
-              images: "/products/biblio/b1.jpeg",
-            },   {
-              id: "e2",
-              titre: "Étagère design en inox ",
-              description:
-                "Alliant élégance et modernité, cette étagère en inox doré avec des plateaux en verre apporte une touche de luxe à tout intérieu",
-                images: "/products/biblio/b2.jpeg",
-              },   {
-                id: "e3",
-                titre: "Étagère design en inox ",
-                description:
-                  "Alliant élégance et modernité, cette étagère en inox doré avec des plateaux en verre apporte une touche de luxe à tout intérieu",
-                  images: "/products/biblio/b3.jpeg",
-                },   {
-                  id: "e4",
-                  titre: "Étagère design en inox ",
-                  description:
-                    "Alliant élégance et modernité, cette étagère en inox doré avec des plateaux en verre apporte une touche de luxe à tout intérieu",
-                    images: "/products/biblio/b4.jpeg",
-                  },
+            images: "/products/biblio/b1.jpeg",
+          },
+          {
+            id: "e2",
+            titre: "Étagère design en inox ",
+            description:
+              "Alliant élégance et modernité, cette étagère en inox doré avec des plateaux en verre apporte une touche de luxe à tout intérieu",
+            images: "/products/biblio/b2.jpeg",
+          },
+          {
+            id: "e3",
+            titre: "Étagère design en inox ",
+            description:
+              "Alliant élégance et modernité, cette étagère en inox doré avec des plateaux en verre apporte une touche de luxe à tout intérieu",
+            images: "/products/biblio/b3.jpeg",
+          },
+          {
+            id: "e4",
+            titre: "Étagère design en inox ",
+            description:
+              "Alliant élégance et modernité, cette étagère en inox doré avec des plateaux en verre apporte une touche de luxe à tout intérieu",
+            images: "/products/biblio/b4.jpeg",
+          },
+          {
+            id: "e5",
+            titre: "Étagère design en inox ",
+            description:
+              "Alliant élégance et modernité, cette étagère en inox doré avec des plateaux en verre apporte une touche de luxe à tout intérieu",
+            images: "/products/biblio/b5.jpeg",
+          },
+          {
+            id: "e6",
+            titre: "Étagère design en inox ",
+            description:
+              "Alliant élégance et modernité, cette étagère en inox doré avec des plateaux en verre apporte une touche de luxe à tout intérieu",
+            images: "/products/biblio/b6.jpeg",
+          },
         ],
       },
       {
@@ -308,11 +325,47 @@ const products = [
         image: "/products/decoration/decoration.jpeg",
         produits: [
           {
-            id: "5",
-            titre: "Porte moderne en inox",
+            id: "m1",
+            titre: "Miroir mural en inox doré",
             description:
-              "Une porte élégante et résistante pour une sécurité accrue.",
-            images: "image7.jpg",
+              "Ce miroir au design moderne et sophistiqué est sublimé par un cadre en inox doré aux lignes géométriques élégantes",
+            images: "/products/decoration/m1.jpeg",
+          },  {
+            id: "m2",
+            titre: "Miroir mural en inox doré",
+            description:
+              "Ce miroir au design moderne et sophistiqué est sublimé par un cadre en inox doré aux lignes géométriques élégantes",
+            images: "/products/decoration/m1.jpeg",
+          },  {
+            id: "m2",
+            titre: "Miroir mural en inox doré",
+            description:
+              "Ce miroir au design moderne et sophistiqué est sublimé par un cadre en inox doré aux lignes géométriques élégantes",
+            images: "/products/decoration/m2.jpeg",
+          },  {
+            id: "m3",
+            titre: "Miroir mural en inox doré",
+            description:
+              "Ce miroir au design moderne et sophistiqué est sublimé par un cadre en inox doré aux lignes géométriques élégantes",
+            images: "/products/decoration/m3.jpeg",
+          },  {
+            id: "m4",
+            titre: "Miroir mural en inox doré",
+            description:
+              "Ce miroir au design moderne et sophistiqué est sublimé par un cadre en inox doré aux lignes géométriques élégantes",
+            images: "/products/decoration/m4.jpeg",
+          }, {
+            id: "m5",
+            titre: "Miroir mural en inox doré",
+            description:
+              "Ce miroir au design moderne et sophistiqué est sublimé par un cadre en inox doré aux lignes géométriques élégantes",
+            images: "/products/decoration/m5.jpeg",
+          }, {
+            id: "m6",
+            titre: "Miroir mural en inox doré",
+            description:
+              "Ce miroir au design moderne et sophistiqué est sublimé par un cadre en inox doré aux lignes géométriques élégantes",
+            images: "/products/decoration/m6.jpeg",
           },
         ],
       },
