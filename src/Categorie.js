@@ -335,12 +335,6 @@ const products = [
             titre: "Miroir mural en inox doré",
             description:
               "Ce miroir au design moderne et sophistiqué est sublimé par un cadre en inox doré aux lignes géométriques élégantes",
-            images: "/products/decoration/m1.jpeg",
-          },  {
-            id: "m2",
-            titre: "Miroir mural en inox doré",
-            description:
-              "Ce miroir au design moderne et sophistiqué est sublimé par un cadre en inox doré aux lignes géométriques élégantes",
             images: "/products/decoration/m2.jpeg",
           },  {
             id: "m3",
@@ -366,6 +360,40 @@ const products = [
             description:
               "Ce miroir au design moderne et sophistiqué est sublimé par un cadre en inox doré aux lignes géométriques élégantes",
             images: "/products/decoration/m6.jpeg",
+          },{
+            id: "m7",
+            titre: "Miroir mural en inox doré",
+            description:
+              "Ce miroir au design moderne et sophistiqué est sublimé par un cadre en inox doré aux lignes géométriques élégantes",
+            images: "/products/decoration/m7.jpeg",
+          },
+          {
+            id: "m8",
+            titre: "Miroir mural en inox doré",
+            description:
+              "Ce miroir au design moderne et sophistiqué est sublimé par un cadre en inox doré aux lignes géométriques élégantes",
+            images: "/products/decoration/m8.jpeg",
+          },
+          {
+            id: "m9",
+            titre: "Miroir mural en inox doré",
+            description:
+              "Ce miroir au design moderne et sophistiqué est sublimé par un cadre en inox doré aux lignes géométriques élégantes",
+            images: "/products/decoration/m9.jpeg",
+          },
+          {
+            id: "m10",
+            titre: "Miroir mural en inox doré",
+            description:
+              "Ce miroir au design moderne et sophistiqué est sublimé par un cadre en inox doré aux lignes géométriques élégantes",
+            images: "/products/decoration/m10.jpeg",
+          },
+          {
+            id: "m11",
+            titre: "Miroir mural en inox doré",
+            description:
+              "Ce miroir au design moderne et sophistiqué est sublimé par un cadre en inox doré aux lignes géométriques élégantes",
+            images: "/products/decoration/m11.jpeg",
           },
         ],
       },
