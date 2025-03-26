@@ -6,7 +6,7 @@ const products = [
       {
         nom: "Chaises",
         description: "En inox pour un design moderne et épuré.",
-        idcode:1,
+        idcode: 1,
         image: "/products/chaises/chaise1.jpeg",
         produits: [
           {
@@ -73,90 +73,146 @@ const products = [
           },
           {
             id: "c10",
-            titre: "Chaise moderne en inox",
+            titre: "Chaise 4 moderne en inox",
             description:
               "Une chaise élégante en inox avec un design minimaliste.",
             images: "/products/chaises/chaise7.jpeg",
           },
           {
             id: "c11",
-            titre: "Chaise moderne en inox",
+            titre: "Chaise 5 moderne en inox",
             description:
               "Une chaise élégante en inox avec un design minimaliste.",
             images: "/products/chaises/chaise8.jpeg",
-          },   {
-            id: "c11",
-            titre: "Chaise moderne en inox",
+          },
+          {
+            id: "c12",
+            titre: "Chaise 6 moderne en inox",
             description:
               "Une chaise élégante en inox avec un design minimaliste.",
             images: "/products/chaises/chaise9.jpeg",
           },
-          
+          {
+            id: "c13",
+            titre: "Chaise 7 moderne en inox",
+            description:
+              "Une chaise élégante en inox avec un design minimaliste.",
+            images: "/products/chaises/chaise10.jpeg",
+          },
+          {
+            id: "c14",
+            titre: "Chaise 8 moderne en inox",
+            description:
+              "Une chaise élégante en inox avec un design minimaliste.",
+            images: "/products/chaises/chaise11.jpeg",
+          },
+          {
+            id: "c15",
+            titre: "Chaise 9 moderne en inox",
+            description:
+              "Une chaise élégante en inox avec un design minimaliste.",
+            images: "/products/chaises/chaise12.jpeg",
+          },
+          {
+            id: "c16",
+            titre: "Chaise 10 moderne en inox",
+            description:
+              "Une chaise élégante en inox avec un design minimaliste.",
+            images: "/products/chaises/chaise13.jpeg",
+          },
+          {
+            id: "c17",
+            titre: "Chaise 11 moderne en inox",
+            description:
+              "Une chaise élégante en inox avec un design minimaliste.",
+            images: "/products/chaises/chaise14.jpeg",
+          },
         ],
       },
       {
         nom: "Tables",
         description:
           "Tables à manger, de bureau, ou de café avec des pieds en inox.",
-        idcode:2,
+        idcode: 2,
         image: "/products/tables/tablev6.jpeg",
 
         produits: [
           {
-            id: "10",
+            id: "t10",
             titre: "Table 1 en inox avec plateau en verre",
             description:
               "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
             images: "/products/tables/tablev1.jpeg",
           },
           {
-            id: "11",
+            id: "t11",
             titre: "Table 2 en inox avec plateau en verre",
             description:
               "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
             images: "/products/tables/tablev2.jpeg",
           },
           {
-            id: "12",
+            id: "t12",
             titre: "Table 3 en inox avec plateau en verre",
             description:
               "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
             images: "/products/tables/tablev3.jpeg",
           },
           {
-            id: "13",
+            id: "t13",
             titre: "Table 4 en inox avec plateau en verre",
             description:
               "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
             images: "/products/tables/tablev4.jpeg",
           },
           {
-            id: "14",
+            id: "t14",
             titre: "Table 5 en inox avec plateau en verre",
             description:
               "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
             images: "/products/tables/tablev5.jpeg",
           },
           {
-            id: "15",
+            id: "t15",
             titre: "Table 6 en inox avec plateau en verre",
             description:
               "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
             images: "/products/tables/tablev6.jpeg",
           },
           {
-            id: "16",
+            id: "t16",
             titre: "Table 7 en inox avec plateau en verre",
             description:
               "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
             images: "/products/tables/tablev7.jpeg",
           },
           {
-            id: "17",
+            id: "t17",
             titre: "Table à manger ",
             description:
               "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
             images: "/products/tables/tablev8.jpeg",
+          },
+          {
+            id: "t18",
+            titre: "Table 8 en inox avec plateau en verre",
+            description:
+              "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
+            images: "/products/tables/tablev9.jpeg",
+          },
+          {
+            id: "t19",
+            titre: "Table 9 en inox avec plateau en verre",
+            description:
+              "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
+            images: "/products/tables/tablev10.jpeg",
+          },
+          {
+            id: "t20",
+            titre: "Table107 en inox avec plateau en verre",
+            description:
+              "Une table robuste et moderne avec un plateau en verre et des pieds en inox.",
+            images: "/products/tables/tablev11.jpeg",
           },
         ],
       },
@@ -165,37 +221,90 @@ const products = [
         nom: "Bureaux ",
         description:
           "Sur mesure, avec des structures en inox pour une allure contemporaine.",
-        idcode:3,
+        idcode: 3,
         image: "/products/bureaux/bureaux.jpg",
         produits: [
           {
-            id: "5",
-            titre: "Porte moderne en inox",
+            id: "b1",
+            titre: "Bureau Professionnel",
             description:
-              "Une porte élégante et résistante pour une sécurité accrue.",
-            images: "image7.jpg",
+              "offrir un espace de travail confortable et ergonomique. Fabriqués avec des matériaux de qualité",
+            images: "/products/bureaux/b1.jpeg",
+          },
+          {
+            id: "b2",
+            titre: "Bureau Professionnel",
+            description:
+              "offrir un espace de travail confortable et ergonomique. Fabriqués avec des matériaux de qualité",
+            images: "/products/bureaux/b2.jpeg",
+          },
+          {
+            id: "b3",
+            titre: "Bureau Professionnel",
+            description:
+              "offrir un espace de travail confortable et ergonomique. Fabriqués avec des matériaux de qualité",
+            images: "/products/bureaux/b3.jpg",
+          },
+          {
+            id: "b4",
+            titre: "Bureau Professionnel",
+            description:
+              "offrir un espace de travail confortable et ergonomique. Fabriqués avec des matériaux de qualité",
+            images: "/products/bureaux/b4.jpeg",
+          },
+          {
+            id: "b5",
+            titre: "Bureau Professionnel",
+            description:
+              "offrir un espace de travail confortable et ergonomique. Fabriqués avec des matériaux de qualité",
+            images: "/products/bureaux/b5.jpeg",
+          },
+          {
+            id: "b6",
+            titre: "Bureau Professionnel",
+            description:
+              "offrir un espace de travail confortable et ergonomique. Fabriqués avec des matériaux de qualité",
+            images: "/products/bureaux/b6.jpeg",
           },
         ],
       },
       {
         nom: "Bibliothèques et étagères",
         description: "Avec des étagères en inox pour un aspect industriel.",
-        idcode:4,
+        idcode: 4,
         image: "/products/biblio/bibliotheque.jpg",
         produits: [
           {
-            id: "5",
-            titre: "Porte moderne en inox",
+            id: "e1",
+            titre: "Étagère design en inox ",
             description:
-              "Une porte élégante et résistante pour une sécurité accrue.",
-            images: "image7.jpg",
-          },
+              "Alliant élégance et modernité, cette étagère en inox doré avec des plateaux en verre apporte une touche de luxe à tout intérieu",
+              images: "/products/biblio/b1.jpeg",
+            },   {
+              id: "e2",
+              titre: "Étagère design en inox ",
+              description:
+                "Alliant élégance et modernité, cette étagère en inox doré avec des plateaux en verre apporte une touche de luxe à tout intérieu",
+                images: "/products/biblio/b2.jpeg",
+              },   {
+                id: "e3",
+                titre: "Étagère design en inox ",
+                description:
+                  "Alliant élégance et modernité, cette étagère en inox doré avec des plateaux en verre apporte une touche de luxe à tout intérieu",
+                  images: "/products/biblio/b3.jpeg",
+                },   {
+                  id: "e4",
+                  titre: "Étagère design en inox ",
+                  description:
+                    "Alliant élégance et modernité, cette étagère en inox doré avec des plateaux en verre apporte une touche de luxe à tout intérieu",
+                    images: "/products/biblio/b4.jpeg",
+                  },
         ],
       },
       {
         nom: "Éléments de décoration ",
         description: "Sculptures, miroirs avec cadres en inox, lampes, etc.",
-        idcode:5,
+        idcode: 5,
         image: "/products/decoration/decoration.jpeg",
         produits: [
           {
@@ -217,7 +326,7 @@ const products = [
         nom: "Portes",
         description:
           "Portes extérieures ou intérieures en inox, utilisées pour leur robustesse et leur résistance.",
-        idcode:6,
+        idcode: 6,
         image: "/products/portes/porte.jpeg",
         produits: [
           {
@@ -233,7 +342,7 @@ const products = [
         nom: "Fenêtres",
         description:
           "Cadres de fenêtres, offrant un look moderne et une haute résistance aux intempéries.",
-        idcode:7,
+        idcode: 7,
         image: "/products/fenetres/fenetre.jpeg",
         produits: [
           {
@@ -248,7 +357,7 @@ const products = [
       {
         nom: "Volets roulants",
         description: "Avec des matériaux inox pour une meilleure durée de vie.",
-        idcode:8,
+        idcode: 8,
         image: "/products/Volets/volet.jpeg",
         produits: [
           {
@@ -264,7 +373,7 @@ const products = [
         nom: "Portails et grilles",
         description:
           "Portails extérieurs et grilles de sécurité fabriqués en inox.",
-        idcode:9,
+        idcode: 9,
         image: "/products/portails/Portail.jpeg",
         produits: [
           {
@@ -284,7 +393,7 @@ const products = [
     souscategories: [
       {
         nom: "Sanitaires ",
-        idcode:10,
+        idcode: 10,
         image: "/products/industrie/sanitaire.jpeg",
         description:
           "Lavabos, douches, et autres équipements sanitaires en inox pour leur résistance et leur facilité d’entretien.",
@@ -300,7 +409,7 @@ const products = [
       },
       {
         nom: "Tuyauteries ",
-        idcode:11,
+        idcode: 11,
         image: "/products/industrie/tuyautrie.jpeg",
         description:
           "Conduites, tuyaux et raccords en inox pour le transport de fluides dans les systèmes industriels.",
@@ -316,7 +425,7 @@ const products = [
       },
       {
         nom: "Réservoirs",
-        idcode:12,
+        idcode: 12,
         image: "/products/industrie/reservoir.jpeg",
         description:
           "Réservoirs de stockage ou cuves en inox utilisés dans l'industrie alimentaire, chimique, ou pharmaceutique",
@@ -332,7 +441,7 @@ const products = [
       },
       {
         nom: "Machines industrielles ",
-        idcode:13,
+        idcode: 13,
         image: "/products/industrie/machine.jpg",
         description:
           "Composants de machines, comme des supports ou des éléments en inox pour leur robustesse et leur résistance à la chaleur",
