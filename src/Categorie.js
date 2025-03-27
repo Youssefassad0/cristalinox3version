@@ -330,37 +330,43 @@ const products = [
             description:
               "Ce miroir au design moderne et sophistiqué est sublimé par un cadre en inox doré aux lignes géométriques élégantes",
             images: "/products/decoration/m1.jpeg",
-          },  {
+          },
+          {
             id: "m2",
             titre: "Miroir mural en inox doré",
             description:
               "Ce miroir au design moderne et sophistiqué est sublimé par un cadre en inox doré aux lignes géométriques élégantes",
             images: "/products/decoration/m2.jpeg",
-          },  {
+          },
+          {
             id: "m3",
             titre: "Miroir mural en inox doré",
             description:
               "Ce miroir au design moderne et sophistiqué est sublimé par un cadre en inox doré aux lignes géométriques élégantes",
             images: "/products/decoration/m3.jpeg",
-          },  {
+          },
+          {
             id: "m4",
             titre: "Miroir mural en inox doré",
             description:
               "Ce miroir au design moderne et sophistiqué est sublimé par un cadre en inox doré aux lignes géométriques élégantes",
             images: "/products/decoration/m4.jpeg",
-          }, {
+          },
+          {
             id: "m5",
             titre: "Miroir mural en inox doré",
             description:
               "Ce miroir au design moderne et sophistiqué est sublimé par un cadre en inox doré aux lignes géométriques élégantes",
             images: "/products/decoration/m5.jpeg",
-          }, {
+          },
+          {
             id: "m6",
             titre: "Miroir mural en inox doré",
             description:
               "Ce miroir au design moderne et sophistiqué est sublimé par un cadre en inox doré aux lignes géométriques élégantes",
             images: "/products/decoration/m6.jpeg",
-          },{
+          },
+          {
             id: "m7",
             titre: "Miroir mural en inox doré",
             description:
@@ -411,11 +417,74 @@ const products = [
         image: "/products/portes/porte.jpeg",
         produits: [
           {
-            id: "5",
-            titre: "Porte moderne en inox",
+            id: "p1",
+            titre: "Porte d’entrée moderne en inox et finition noire",
             description:
               "Une porte élégante et résistante pour une sécurité accrue.",
-            images: "image7.jpg",
+            images: "/products/portes/p1.jpeg",
+          },
+          {
+            id: "p2",
+            titre: "Porte d’entrée moderne en inox et finition noire",
+            description:
+              "Une porte élégante et résistante pour une sécurité accrue.",
+            images: "/products/portes/p2.jpeg",
+          },
+          {
+            id: "p3",
+            titre: "Porte d’entrée moderne en fer",
+            description:
+              "Une porte élégante et résistante pour une sécurité accrue.",
+            images: "/products/portes/p3.jpeg",
+          },
+          {
+            id: "p4",
+            titre: "Porte d’entrée moderne en inox et finition noire",
+            description:
+              "Une porte élégante et résistante pour une sécurité accrue.",
+            images: "/products/portes/p4.jpeg",
+          },
+          {
+            id: "p5",
+            titre: "Porte d’entrée moderne en inox et finition noire",
+            description:
+              "Une porte élégante et résistante pour une sécurité accrue.",
+            images: "/products/portes/p5.jpeg",
+          },
+          {
+            id: "p6",
+            titre: "Porte d’entrée moderne en inox et finition noire",
+            description:
+              "Une porte élégante et résistante pour une sécurité accrue.",
+            images: "/products/portes/p6.jpeg",
+          },
+          {
+            id: "p7",
+            titre: "Porte d’entrée moderne en inox et finition noire",
+            description:
+              "Une porte élégante et résistante pour une sécurité accrue.",
+            images: "/products/portes/p7.jpeg",
+          },
+          {
+            id: "p8",
+            titre: "Porte d’entrée moderne en inox et finition noire",
+            description:
+              "Une porte élégante et résistante pour une sécurité accrue.",
+            images: "/products/portes/p8.jpeg",
+          },
+          {
+            id: "p9",
+            titre: "Porte d’entrée moderne en inox et finition noire",
+            description:
+              "Une porte élégante et résistante pour une sécurité accrue.",
+            images: "/products/portes/p9.jpeg",
+          },
+          {
+            id: "p10",
+            titre: "Porte d’entrée moderne en inox et finition noire",
+            description:
+              "Une porte élégante et résistante pour une sécurité accrue.",
+            images: "/products/portes/p10.jpeg",
           },
         ],
       },
