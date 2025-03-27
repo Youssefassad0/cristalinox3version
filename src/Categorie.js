@@ -527,12 +527,42 @@ const products = [
         image: "/products/portails/Portail.jpeg",
         produits: [
           {
-            id: "5",
+            id: "g1",
             titre: "Porte moderne en inox",
             description:
-              "Une porte élégante et résistante pour une sécurité accrue.",
-            images: "image7.jpg",
-          },
+              "Portail coulissant moderne en inox",
+              images: "/products/portails/g1.jpeg",
+            }, {
+              id: "g2",
+              titre: "Porte moderne en inox",
+              description:
+                "Portail coulissant moderne en inox",
+                images: "/products/portails/g2.jpeg",
+              }, {
+                id: "g3",
+                titre: "Porte moderne en inox",
+                description:
+                  "Portail coulissant moderne en inox",
+                  images: "/products/portails/g3.jpeg",
+                }, {
+                  id: "g4",
+                  titre: "Porte moderne en inox",
+                  description:
+                    "Portail coulissant moderne en inox",
+                    images: "/products/portails/g4.jpeg",
+                  }, {
+                    id: "g5",
+                    titre: "Porte moderne en inox",
+                    description:
+                      "Portail coulissant moderne en inox",
+                      images: "/products/portails/g5.jpeg",
+                    }, {
+                      id: "g6",
+                      titre: "Porte moderne en inox",
+                      description:
+                        "Portail coulissant moderne en inox",
+                        images: "/products/portails/g6.jpeg",
+                      },
         ],
       },
     ],
